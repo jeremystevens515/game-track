@@ -1,7 +1,7 @@
 const {Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection")
 
-class Users extends Model()
+class Users extends Model{}
 
 
 Users.init(
@@ -27,4 +27,11 @@ Users.init(
       created_at: {
         type: DataTypes.DATE,
         defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
+}
+},
+{
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    modelName:'users',
 })
