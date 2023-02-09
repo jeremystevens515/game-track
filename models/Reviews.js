@@ -37,4 +37,12 @@ Reviews.init({
   created_at: {
     type: DataTypes.DATE,
     defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
-  }})
+  }
+},
+{
+  sequelize,
+  modelName:'Reviews',
+  freezeTableName: true,
+  underscored:true,
+}
+  )

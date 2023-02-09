@@ -24,5 +24,13 @@ Games.init({
   cover_image: {
     type: DataTypes.STRING,
     allowNull: false
-  }})
+  }
+},
+{
+  sequelize,
+  modelName:'Games',
+  freezeTableName: true,
+  underscored: true,
+
+})
   

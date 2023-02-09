@@ -25,5 +25,11 @@ Wishlist.init({
         key: "user_id"
       }
     }
+  },
+  {
+    sequelize,
+    modelName:'Wishlist',
+    freezeTableName: true,
+    underscored: true,
   }
   )
