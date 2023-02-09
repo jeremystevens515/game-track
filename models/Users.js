@@ -1,10 +1,37 @@
-const { DataTypes } = require("sequelize");
+const {Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection")
 
-user_id:{
-    type:DataTypes.INTEGER,
-    allowNull: false,
-    references: {
-        model:URLSearchParams,
-        key:"user_id"
-    }
+class Users extends Model{}
+
+
+Users.init(
+{
+    user_id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true
+      },
+      username: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+      },
+      password: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      created_at: {
+        type: DataTypes.DATE,
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
 }
+},
+{
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    modelName:'users',
+})
