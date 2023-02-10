@@ -13,28 +13,11 @@ const seedDatabase = async () => {
 	});
 
 	// adding games
-	for (const game in gamesData) {
-		await Games.create({
-			id: game.id,
-			title: game.name,
-			publisher: () => {
-				for (let company of game.involved_companies) {
-					if (company.publisher === true) {
-						return company.company.name;
-					}
-				}
-			},
-			release_date: game.first_release_date,
-			cover_image: game.cover.image_id,
-			genre: game.genres,
-			platform: game.platforms,
-			summary: game.summary,
-			storyline: game.storyline,
-			rating: game.total_rating,
-			rating_count: game.total_rating_count,
-			similar_games: game.similar_games,
-		});
+	for (const game of gamesData) {
+		await Games.create({ ...game });
 	}
 
 	process.exit(0);
 };
+
+seedDatabase();

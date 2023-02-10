@@ -9,27 +9,27 @@ Games.init(
 			type: DataTypes.INTEGER,
 			primaryKey: true,
 		},
-		title: {
+		name: {
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
-		publisher: {
-			type: DataTypes.STRING,
-			allowNull: false,
-		},
-		release_date: {
-			type: DataTypes.DATE,
-			allowNull: false,
-		},
-		cover_image: {
-			type: DataTypes.STRING,
-			allowNull: false,
-		},
-		genre: {
+		involved_companies: {
 			type: DataTypes.JSON,
 			allowNull: false,
 		},
-		platform: {
+		first_release_date: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+		},
+		cover: {
+			type: DataTypes.JSON,
+			allowNull: false,
+		},
+		genres: {
+			type: DataTypes.JSON,
+			allowNull: false,
+		},
+		platforms: {
 			type: DataTypes.JSON,
 			allowNull: true,
 		},
@@ -41,11 +41,11 @@ Games.init(
 			type: DataTypes.TEXT,
 			allowNull: true,
 		},
-		rating: {
+		total_rating: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 		},
-		rating_count: {
+		total_rating_count: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
 		},
