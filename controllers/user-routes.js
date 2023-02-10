@@ -2,12 +2,17 @@ const router = require("express").Router();
 const { Users, Reviews, Wishlist, Games } = require("../models");
 // GET requests--------------------------------------------------
 router.get("/reviews", async (req, res) => {
-	const userReviews = await Reviews.findAll({
-		where: {
-			user_id: req.session.user_id,
+	const userReviews = await Reviews.findAll(
+		{
+			include: [{ model: Games }],
 		},
-	});
-	res.render("../views/user-reviews");
+		{
+			where: {
+				user_id: req.session.user_id,
+			},
+		}
+	);
+	res.render("../views/user-reviews", { userReviews });
 });
 
 // POST requests--------------------------------------------------
@@ -16,7 +21,8 @@ router.post("/create_account", async (req, res) => {
 	try {
 		const userData = await Users.create(req.body);
 		req.session.save(() => {
-			(req.session.user_id = userData.id), (req.session.loggedIn = true);
+			req.session.user_id = userData.id;
+			req.session.loggedIn = true;
 
 			res.status(200).json(userData);
 		});
@@ -46,7 +52,8 @@ router.post("/login", async (req, res) => {
 		}
 
 		req.session.save(() => {
-			(req.session.user_id = userData.id), (req.session.loggedIn = true);
+			req.session.user_id = userData.id;
+			req.session.loggedIn = true;
 		});
 	} catch (err) {
 		res.status(500).json(err);
