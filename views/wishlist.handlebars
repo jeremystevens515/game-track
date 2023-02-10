@@ -1,0 +1,12 @@
+{{#each wishes as |wish|}}
+<div class="card card-side bg-base-100 shadow-xl">
+  <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Game-Cover"/></figure>
+  <div class="card-body">
+    <h2 class="card-title">{{wish.username}}</h2>
+    <p>Click the button to go to Game Page</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">{{wish.id}}</button>
+    </div>
+  </div>
+</div>
+{{/each}}
