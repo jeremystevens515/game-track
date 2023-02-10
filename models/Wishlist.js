@@ -6,6 +6,7 @@ class Wishlist extends Model{}
 Wishlist.init({
     wishlist_id: {
       type: DataTypes.INTEGER,
+      allowNull:false,
       autoIncrement: true,
       primaryKey: true
     },
