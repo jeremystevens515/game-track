@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./main.css"
+</head>
+<body>
+    <!--put action of what server to load into-->
+    <form action="" method="post" class="form form--hidden" id="createAccount">
+        <h1 class="formtitle">Create Account</h1>
+        <div class="formmessage formmessage--error"></div>
+        <div class="forminput-group">
+            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <div class="forminput-error-message"></div>
+        </div>
+        <div class="forminput-group">
+            <input type="text" class="forminput" autofocus placeholder="Email Address">
+            <div class="forminput-error-message"></div>
+        </div>
+        <div class="forminput-group">
+            <input type="password" class="forminput" autofocus placeholder="Password">
+            <div class="forminput-error-message"></div>
+        </div>
+        <div class="forminput-group">
+            <input type="password" class="forminput" autofocus placeholder="Confirm password">
+            <div class="forminput-error-message"></div>
+        </div>
+        <button class="formbutton" type="submit">Continue</button>
+        <p class="formtext">
+            <a class="formlink" href="./login.html" id="linkLogin">Already have an account? Sign in</a>
+        </p>
+    </form>
+</div>
+</body>
+</html>
