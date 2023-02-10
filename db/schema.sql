@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS gameTrack_db;
+
+CREATE DATABASE gameTrack_db;
