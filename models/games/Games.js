@@ -25,6 +25,34 @@ Games.init(
 			type: DataTypes.STRING,
 			allowNull: false,
 		},
+		genre: {
+			type: DataTypes.JSON,
+			allowNull: false,
+		},
+		platform: {
+			type: DataTypes.JSON,
+			allowNull: true,
+		},
+		summary: {
+			type: DataTypes.TEXT,
+			allowNull: true,
+		},
+		storyline: {
+			type: DataTypes.TEXT,
+			allowNull: true,
+		},
+		rating: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+		},
+		rating_count: {
+			type: DataTypes.INTEGER,
+			allowNull: false,
+		},
+		similar_games: {
+			type: DataTypes.JSON,
+			allowNull: true,
+		},
 	},
 	{
 		sequelize,
