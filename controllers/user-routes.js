@@ -1,18 +1,23 @@
 const router = require("express").Router();
+const sequelize = require("../config/connection");
 const { Users, Reviews, Wishlist, Games } = require("../models");
 // GET requests--------------------------------------------------
 router.get("/reviews", async (req, res) => {
-	const userReviews = await Reviews.findAll(
-		{
-			include: [{ model: Games }],
+	//  select reviews.id, reviews.user_id, reviews.rating, reviews.review_text, reviews.created_at,games.name from reviews left join games on reviews.game_id = games.id
+
+	// get reviews from users.id
+	// join tables with games to get game name from game_id
+	const userReviews = await Reviews.findAll({
+		where: {
+			user_id: 1, //req.session.user_id,
 		},
-		{
-			where: {
-				user_id: req.session.user_id,
-			},
-		}
-	);
-	res.render("../views/user-reviews", { userReviews });
+		include: {
+			model: Games,
+			attributes: ["name"],
+		},
+	});
+	res.status(200).json(userReviews);
+	// res.render("../views/user-reviews", { userReviews });
 });
 
 // POST requests--------------------------------------------------
