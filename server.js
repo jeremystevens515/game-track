@@ -9,6 +9,8 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const models = require("./models");
 const { route } = require("./controllers/index");
+const helpers = require('./utils/helpers');
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
