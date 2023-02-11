@@ -35,3 +35,5 @@ Wishlist.init(
 		modelName: "wishlist",
 	}
 );
+
+module.exports = Wishlist;

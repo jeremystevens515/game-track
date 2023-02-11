@@ -29,6 +29,9 @@ Reviews.init(
 		rating: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
+			validate: {
+				max: 100,
+			},
 		},
 		review_text: {
 			type: DataTypes.TEXT,
