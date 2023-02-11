@@ -11,7 +11,10 @@ try {
     });
     gamesData.forEach(game => {
         const genresNames = game.genres.map(genre => genre.name)
-        game.genres = JSON.stringify(genresNames)
+        game.genres = JSON.stringify(genresNames);
+        game.cover = game.cover.image_id;
+        // game.coverImage = game.cover.id
+        
     });
     res.render('homepage', {gamesData})
 }catch(err){

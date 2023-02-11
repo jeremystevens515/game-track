@@ -28,12 +28,23 @@
 </div>
 </nav>
 <main>
-  {{#each gamesData}}
-<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
+
+{{#each gamesData}}
+<div class="card card-compact w-96 bg-base-100 shadow-xl  ">
+  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" /></figure>
   <div class="card-body">
     <h2 class="card-title">{{this.dataValues.name}}</h2>
-    <p>Genres:{{this.dataValues.genres}}<p>
+    <p>Genres:{{this.dataValues.genres}}</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">OPEN</button>
+    </div>
   </div>
-  <figure><img src="{{this.dataValues.cover}}" alt="cover picture" /></figure>
+</div>
+<br>
 {{/each}}
 </main>
+
+{{!-- "https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" --}}
+{{!-- {{this.dataValues.name}} --}}
+{{!-- Genres:{{this.dataValues.genres}} --}}
+    
