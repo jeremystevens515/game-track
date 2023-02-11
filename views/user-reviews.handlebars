@@ -1,0 +1,19 @@
+<main>
+	<h2 class="text-lg px-6">Reviews by User</h2>
+	{{#each plainReviews as |review|}}
+		<div class="card card-side bg-base-100 shadow-xl m-5">
+			<figure><img
+					src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{review.game.cover.image_id}}.jpg"
+					alt="{{review.game.name}}"
+				/></figure>
+			<div class="card-body">
+				<h2 class="card-title">Your review for {{review.game.name}} posted on {{review.created_at}}</h2>
+				<h3>Community Rating: {{review.game.total_rating}}/100 | Your Rating: {{review.rating}}/100</h3>
+				<p>{{review.review_text}}</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">Edit</button>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</main>
