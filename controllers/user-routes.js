@@ -24,11 +24,11 @@ router.get("/reviews", async (req, res) => {
 	}
 });
 
-router.get("/wishlist/:id", async (req, res) => {
+router.get("/wishlist/", async (req, res) => {
 	try {
 		const userWishlist = await Wishlist.findAll({
 			where: {
-				user_id: req.params.id,
+				user_id: 1, //req.session.user_id,
 			},
 		});
 
