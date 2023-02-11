@@ -24,6 +24,23 @@ router.get("/reviews", async (req, res) => {
 	}
 });
 
+router.get("/wishlist/:id", async (req, res) => {
+	try {
+		const userWishlist = await Wishlist.findAll({
+			where: {
+				user_id: req.params.id,
+			},
+		});
+
+		const plainWishlist = userWishlist.map((list) => {
+			return list.get({ plain: true });
+		});
+		// res.status(200).json(plainWishlist);
+		res.render("user-wishlist", { plainWishlist });
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
 // POST requests--------------------------------------------------
 // create account
 router.post("/create_account", async (req, res) => {
