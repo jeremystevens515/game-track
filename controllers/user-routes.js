@@ -11,7 +11,7 @@ router.get("/reviews", async (req, res) => {
 			},
 			include: {
 				model: Games,
-				attributes: ["name", "cover"],
+				attributes: ["name", "cover", "total_rating"],
 			},
 		});
 		const plainReviews = await userReviews.map((review) => {
