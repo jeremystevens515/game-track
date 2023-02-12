@@ -1,0 +1,22 @@
+{{!-- <div>
+    {{#if imageId}}
+    <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{imageId}}.jpg" alt="cover image"/>
+    {{/if}}
+</div>
+<p class=' flex justify-center'>{{gamesInfo.dataValues.name}}</p> --}}
+<figure>
+{{#if imageId}}
+<div class="ml-10">
+    <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{imageId}}.jpg" alt="cover image"/>
+    {{/if}}
+</div>
+    </figure>
+<div class="card lg:card-side bg-base-100 shadow-xl text-center">
+  <div class="card-body text-center">
+    <h2 class="card-title text-center">{{gamesInfo.dataValues.name}}</h2>
+    <p class="flex-wrap">{{gamesInfo.dataValues.summary}}</p>
+    <p class="flex-wrap text-left">Critic Score-{{gamesInfo.dataValues.total_rating}}%</p>
+    <div class="card-actions justify-end">
+    </div>
+  </div>
+</div>

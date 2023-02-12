@@ -1,17 +1,16 @@
 <main>
 
 {{#each gamesData}}
-<div class="card card-compact w-96 bg-base-100 shadow-xl  ">
-  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" /></figure>
+<div class="card lg:card-side bg-base-100 shadow-xl">
+  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="Album"/></figure>
   <div class="card-body">
     <h2 class="card-title">{{this.dataValues.name}}</h2>
     <p>Genres:{{this.dataValues.genres}}</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">OPEN</button>
+      <a class="btn btn-primary" href="/{{this.dataValues.id}}">Open</a>
     </div>
   </div>
 </div>
-<br>
 {{/each}}
 </main>
 
