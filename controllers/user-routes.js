@@ -3,7 +3,9 @@ const sequelize = require("../config/connection");
 const { Users, Reviews, Wishlist, Games } = require("../models");
 // GET requests--------------------------------------------------
 router.get("/reviews", async (req, res) => {
-	//  select reviews.id, reviews.user_id, reviews.rating, reviews.review_text, reviews.created_at,games.name from reviews left join games on reviews.game_id = games.id
+	if (!req.session.loggedIn) {
+		res.redirect;
+	}
 	try {
 		const userReviews = await Reviews.findAll({
 			where: {
@@ -41,6 +43,7 @@ router.get("/wishlist/", async (req, res) => {
 		res.status(500).json(err);
 	}
 });
+
 // POST requests--------------------------------------------------
 // create account
 router.post("/create_account", async (req, res) => {
@@ -59,10 +62,14 @@ router.post("/create_account", async (req, res) => {
 
 // login
 router.post("/login", async (req, res) => {
+	console.log("reqest body: ", req.body);
 	try {
 		const userData = await Users.findOne({
+			// where: {
+			// 	[Op.or]: [{ username: req.body.username }, { email: req.body.email }],
+			// },
 			where: {
-				[Op.or]: [{ username: req.body.username }, { email: req.body.email }],
+				username: req.body.username,
 			},
 		});
 
@@ -81,15 +88,17 @@ router.post("/login", async (req, res) => {
 			req.session.user_id = userData.id;
 			req.session.loggedIn = true;
 		});
+		res.status(200).json({ message: "successful login!", session: req.session });
 	} catch (err) {
 		res.status(500).json(err);
 	}
 });
 
 router.post("/logout", async (req, res) => {
+	console.log(req.session);
 	if (req.session.loggedIn) {
 		req.session.destroy(() => {
-			res.status(204).end();
+			res.status(204).json({ message: "logout successful", session: req.session }).end();
 		});
 	} else {
 		res.status(404).end();

@@ -26,14 +26,22 @@
 							</div>
 						</label>
 						<ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-							<li>
-								<a class="justify-between" href="/user/reviews">
-									Profile
-									<span class="badge">Reviews</span>
-								</a>
-							</li>
-							<li><a href="/user/wishlist">Wishlist</a></li>
-							<li><a>Logout</a></li>
+							{{#if loggedIn}}
+								<li>
+									<a class="justify-between" href="/user/reviews">Profile<span class="badge">Reviews</span>
+									</a>
+								</li>
+								<li>
+									<a href="/user/wishlist">Wishlist</a>
+								</li>
+								<li>
+									<a>Logout</a>
+								</li>
+							{{else}}
+								<li>
+									<a href="/user/login">Login</a>
+								</li>
+							{{/if}}
 						</ul>
 					</div>
 				</div>
