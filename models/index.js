@@ -19,9 +19,9 @@ Games.hasMany(Reviews);
 // a review can only have one game
 Reviews.belongsTo(Games);
 
-// a wishlist can have many games
+// one game can belong to many wishlists
 Games.belongsToMany(Wishlist, { through: "GamesWishlist" });
-// one game can be on many wishlists
+// one wishlist can have many games
 Wishlist.belongsToMany(Games, { through: "GamesWishlist" });
 
 module.exports = {
