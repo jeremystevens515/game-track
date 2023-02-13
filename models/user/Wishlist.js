@@ -14,7 +14,7 @@ Wishlist.init(
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
-				model: "games",
+				model: "Games",
 				key: "id",
 			},
 		},
@@ -22,7 +22,7 @@ Wishlist.init(
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
-				model: "users",
+				model: "Users",
 				key: "id",
 			},
 		},
@@ -35,3 +35,5 @@ Wishlist.init(
 		modelName: "wishlist",
 	}
 );
+
+module.exports = Wishlist;

@@ -1,39 +1,15 @@
-<nav>
-    <div class="navbar bg-base-100">
-  <div class="flex-1">
-    <a class="btn btn-ghost normal-case text-xl">GameTrack</a>
-  </div>
-  <div class="flex-none gap-2">
-    <div class="form-control">
-      <input type="text" placeholder="Search" class="input input-bordered" />
-    </div>
-    <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-          <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-        </div>
-      </label>
-      <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a class="justify-between">
-            Profile
-            <span class="badge">Reviews</span>
-          </a>
-        </li>
-        <li><a>Wishlist</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-</nav>
 <main>
-<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
+
+{{#each gamesData}}
+<div class="card lg:card-side  shadow-xl">
+  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="Album"/></figure>
   <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <h2 class="card-title text-3xl">{{this.dataValues.name}}</h2>
+    <p class="text-xl">Genres:{{this.dataValues.genres}}</p>
+    <div class="card-actions justify-end">
+      <a class="btn btn-accent" href="/{{this.dataValues.id}}">Open</a>
+    </div>
   </div>
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
 </div>
 <br>
 <div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
@@ -43,12 +19,10 @@
   </div>
   <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
 </div>
-<br>
-<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
-  <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-  </div>
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-</div>
+{{/each}}
 </main>
+
+{{!-- "https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" --}}
+{{!-- {{this.dataValues.name}} --}}
+{{!-- Genres:{{this.dataValues.genres}} --}}
+    
