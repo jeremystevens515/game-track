@@ -1,25 +1,22 @@
- <!--put action of what server to load into-->
-    <form action="" method="post" class="form form--hidden" id="createAccount">
-        <h1 class="formtitle">Create Account</h1>
+  <div class="container-secondary"></div>
+    <!--put action of what server to load into-->
+    <form action="" method="post" id="createAccount">
+        <h1 class="title">Create Account</h1>
         <div class="formmessage formmessage--error"></div>
-        <div class="forminput-group">
-            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <input type="text" id="signupUsername" class="forminput-secondary" autofocus placeholder="Username">
             <div class="forminput-error-message"></div>
         </div>
-        <div class="forminput-group">
-            <input type="text" class="forminput" autofocus placeholder="Email Address">
+            <input type="text" class="forminput-secondary" autofocus placeholder="Email Address">
             <div class="forminput-error-message"></div>
         </div>
-        <div class="forminput-group">
-            <input type="password" class="forminput" autofocus placeholder="Password">
+            <input type="password" class="forminput-secondary" autofocus placeholder="Password">
             <div class="forminput-error-message"></div>
         </div>
-        <div class="forminput-group">
-            <input type="password" class="forminput" autofocus placeholder="Confirm password">
+            <input type="password" class="forminput-secondary" autofocus placeholder="Confirm password">
             <div class="forminput-error-message"></div>
         </div>
-        <button class="formbutton" type="submit">Continue</button>
+        <button class="btn btn_secondary btn-primary">Continue</button>
         <p class="formtext">
-            <a class="formlink" href="./login.handelbars" id="linkLogin">Already have an account? Sign in</a>
+            <a href="./login.handelbars" class="link link-primary">Already have an account?</a>
         </p>
     </form>
