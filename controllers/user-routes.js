@@ -46,6 +46,7 @@ router.get("/reviews", async (req, res) => {
 });
 
 router.get("/wishlist/:id", async (req, res) => {
+	console.log("request received", req.params.id)
 	try {
 		const userWishlist = await Users.findOne({
 			where: {
@@ -149,7 +150,7 @@ router.post("/wishlist", async (req, res) => {
 		const gameId = req.body.game_id;
 
 		// Replace "2" with req.session.user_id
-		const userId = 2
+		const userId = 1
 
 	const wish = { game_id: gameId, user_id: userId}
 
@@ -170,7 +171,7 @@ router.delete("/wishlist", async(req, res) => {
 			where: {
 				game_id: req.body.id,
 				// Replace "2" with req.session.id
-				user_id: 2
+				user_id: 1
 			}
 		});
 		if(!gameData){

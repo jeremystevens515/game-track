@@ -1,14 +1,19 @@
 <main>
 	<h2 class="text-lg px-6">Wishlist for {INSERT USER_ID HERE}</h2>
 {{#each wishListGames as |game|}}
-	<div class="card" style="width: 18rem;">
+	<div class="card lg:card-side shadow-xl"">
 		<img class="card-img-top" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{game.cover.image_id}}.jpg"
 					alt="{{game.name}}"/>
-		<div class="card-body">
+		<div class="card-body justify-end">
 			<h5 class="card-title">{{game.name}}</h5>
 			<p class="card-text">Summmary: {{game.summary}}</p>
-			<a href="#" class="btn btn-primary">{{game.id}}</a>
+			<div class="card-actions justify-end">
+				<a href="/{{game.id}}" class="btn btn-accent">More</a>
+				<button class="btn btn-warning" id="{{game.id}}">Remove</a>
+			</div>
 		</div>
 	</div>
 {{/each}}
 </main>
+
+<script src="/js/remove-game.js"></script>
