@@ -1,7 +1,23 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const { Users, Reviews, Wishlist, Games } = require("../models");
+
 // GET requests--------------------------------------------------
+// get login page
+router.get("/login", async (req, res) => {
+	res.render("login");
+});
+
+// get sign-up page
+router.get("/signup", async (req, res) => {
+	res.render("signup");
+});
+
+// get forgot-password page
+router.get("/forgot-password", async (req, res) => {
+	res.render("forgot-password");
+});
+
 // get reviews page if user logged in
 // get reviews based on user id
 router.get("/reviews", async (req, res) => {
@@ -23,7 +39,7 @@ router.get("/reviews", async (req, res) => {
 			return review.get({ plain: true });
 		});
 		console.log("userReviews object: ", plainReviews);
-		res.render("../views/user-reviews", { plainReviews });
+		res.render("user-reviews", { plainReviews });
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -58,15 +74,17 @@ router.get("/wishlist/", async (req, res) => {
 
 // POST requests--------------------------------------------------
 // create account
-router.post("/create_account", async (req, res) => {
+router.post("/signup", async (req, res) => {
 	try {
 		const userData = await Users.create(req.body);
 		req.session.save(() => {
 			req.session.user_id = userData.id;
 			req.session.loggedIn = true;
-
-			res.status(200).json(userData);
+			console.log(req.session);
 		});
+		if (req.session.loggedIn) {
+			res.redirect("/");
+		}
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -97,12 +115,16 @@ router.post("/login", async (req, res) => {
 		}
 
 		// set session variables
-		req.session.user_id = userData.id;
-		req.session.loggedIn = true;
-
-		console.log(req.session.user_id);
-		console.log(req.session.loggedIn);
-		res.status(200).json({ message: "successful login!", session: req.session });
+		req.session.save(() => {
+			req.session.user_id = userData.id;
+			req.session.loggedIn = true;
+			console.log(req.session.user_id);
+			console.log(req.session.loggedIn);
+			//res.status(200).json({ message: "successful login!", session: req.session });
+		});
+		if (req.session.loggedIn) {
+			res.redirect("/");
+		}
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -110,11 +132,11 @@ router.post("/login", async (req, res) => {
 
 router.post("/logout", async (req, res) => {
 	console.log(req.session);
-	if (req.session.loggedIn) {
+	try {
 		req.session.destroy(() => {
 			res.status(204).json({ message: "logout successful", session: req.session }).end();
 		});
-	} else {
+	} catch (err) {
 		res.status(404).end();
 	}
 });

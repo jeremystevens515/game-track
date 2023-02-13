@@ -13,7 +13,13 @@ router.get("/", async (req, res) => {
 			game.cover = game.cover.image_id;
 			// game.coverImage = game.cover.id
 		});
-		res.render("homepage", { gamesData });
+		console.log(req.session);
+		console.log("homepage", req.session.loggedIn);
+		res.render("homepage", {
+			gamesData,
+			loggedIn: req.session.loggedIn,
+			user_id: req.session.user_id,
+		});
 	} catch (err) {
 		console.error(err);
 		res.status(500).json({ message: "Error retriving the games" });
