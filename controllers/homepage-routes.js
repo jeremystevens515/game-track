@@ -14,7 +14,6 @@ try {
         game.genres = JSON.stringify(genresNames);
         game.cover = game.cover.image_id;
         // game.coverImage = game.cover.id
-        
     });
     res.render('homepage', {gamesData})
 }catch(err){
