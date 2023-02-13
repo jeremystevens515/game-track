@@ -24,7 +24,6 @@ Games.belongsToMany(Users, { through: Wishlist });
 // one game can be on many wishlists
 Users.belongsToMany(Games, { through: Wishlist });
 
-
 module.exports = {
 	Users,
 	Reviews,
