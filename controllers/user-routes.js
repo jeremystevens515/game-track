@@ -2,14 +2,17 @@ const router = require("express").Router();
 const sequelize = require("../config/connection");
 const { Users, Reviews, Wishlist, Games } = require("../models");
 // GET requests--------------------------------------------------
+// get reviews page if user logged in
+// get reviews based on user id
 router.get("/reviews", async (req, res) => {
-	if (!req.session.loggedIn) {
-		res.redirect;
-	}
+	// if (!req.session.loggedIn) {
+	// 	res.redirect;
+	// }
+	console.log("user_id reviews:", req.session.user_id);
 	try {
 		const userReviews = await Reviews.findAll({
 			where: {
-				user_id: 1, //req.session.user_id,
+				user_id: req.session.user_id,
 			},
 			include: {
 				model: Games,
@@ -30,14 +33,13 @@ router.get("/wishlist/", async (req, res) => {
 	try {
 		const userWishlist = await Wishlist.findAll({
 			where: {
-				user_id: 1, //req.session.user_id,
+				user_id: req.session.user_id,
 			},
 		});
 
 		const plainWishlist = userWishlist.map((list) => {
 			return list.get({ plain: true });
 		});
-		// res.status(200).json(plainWishlist);
 		res.render("user-wishlist", { plainWishlist });
 	} catch (err) {
 		res.status(500).json(err);
