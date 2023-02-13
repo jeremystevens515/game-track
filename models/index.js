@@ -4,10 +4,10 @@ const Wishlist = require("./user/Wishlist");
 
 const Games = require("./games/Games");
 
-// users can only have one wishlist
-Users.hasOne(Wishlist);
-// a wishlist belongs to one user
-Wishlist.belongsTo(Users);
+// // users can only have one wishlist
+// Users.hasOne(Wishlist);
+// // a wishlist belongs to one user
+// Wishlist.belongsTo(Users);
 
 // users can have many reviews
 Users.hasMany(Reviews);
@@ -20,9 +20,10 @@ Games.hasMany(Reviews);
 Reviews.belongsTo(Games);
 
 // a wishlist can have many games
-Games.belongsToMany(Wishlist, { through: "GamesWishlist" });
+Games.belongsToMany(Users, { through: Wishlist });
 // one game can be on many wishlists
-Wishlist.belongsToMany(Games, { through: "GamesWishlist" });
+Users.belongsToMany(Games, { through: Wishlist });
+
 
 module.exports = {
 	Users,
