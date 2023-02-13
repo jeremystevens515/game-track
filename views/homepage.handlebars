@@ -1,17 +1,24 @@
 <main>
 
 {{#each gamesData}}
-<div class="card card-compact w-96 bg-base-100 shadow-xl  ">
-  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" /></figure>
+<div class="card lg:card-side  shadow-xl">
+  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="Album"/></figure>
   <div class="card-body">
-    <h2 class="card-title">{{this.dataValues.name}}</h2>
-    <p>Genres:{{this.dataValues.genres}}</p>
+    <h2 class="card-title text-3xl">{{this.dataValues.name}}</h2>
+    <p class="text-xl">Genres:{{this.dataValues.genres}}</p>
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">OPEN</button>
+      <a class="btn btn-accent" href="/{{this.dataValues.id}}">Open</a>
     </div>
   </div>
 </div>
 <br>
+<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
+  <div class="card-body">
+    <h2 class="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+  </div>
+  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+</div>
 {{/each}}
 </main>
 
