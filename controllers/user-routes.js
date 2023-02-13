@@ -45,22 +45,22 @@ router.get("/reviews", async (req, res) => {
 	}
 });
 
-router.get("/wishlist/", async (req, res) => {
+router.get("/wishlist/:id", async (req, res) => {
 	try {
 		const userWishlist = await Users.findOne({
 			where: {
-				user_id: req.session.user_id,
+				id: req.params.id, //req.session.user_id,
 			},
 			include: {
 				model: Games,
 				through: Wishlist,
-				attributes: ["name", "cover", "total_rating", "summary"],
-			},
+				attributes: ["id", "name", "cover", "total_rating", "summary"]
+			}
 		});
-		// console.log(userWishlist);
+		console.log(userWishlist);
 
 		const plainWishlist = userWishlist.get({ plain: true });
-		// console.log("wishlist object: ", plainWishlist)
+		console.log("wishlist object: ", plainWishlist)
 
 		const wishListGames = plainWishlist.games;
 		console.log(wishListGames);
@@ -127,6 +127,7 @@ router.post("/login", async (req, res) => {
 	}
 });
 
+// Logout
 router.post("/logout", async (req, res) => {
 	console.log(req.session);
 	try {
@@ -137,4 +138,47 @@ router.post("/logout", async (req, res) => {
 		res.status(404).end();
 	}
 });
+
+// Add game to Wishlist
+router.post("/wishlist", async (req, res) => {
+	// console.log("request received", req.body)
+	try{
+		const gameId = req.body.game_id;
+
+		// Replace "2" with req.session.user_id
+		const userId = 2
+
+	const wish = { game_id: gameId, user_id: userId}
+
+	await Wishlist.create(wish)
+
+	res.status(200).json({message: "Success! Game added to Wishlist"})
+
+	} catch(err){
+		res.status(500).json(err);
+	}
+});
+
+// Remove game from Wishlist
+router.delete("/wishlist", async(req, res) => {
+	console.log('request received', req.body)
+	try{
+		const gameData = await Wishlist.destroy({
+			where: {
+				game_id: req.body.id,
+				// Replace "2" with req.session.id
+				user_id: 2
+			}
+		});
+		if(!gameData){
+			res.status(404).json({ message: "This game wasn't on your wishlist"});
+			return;
+		}
+		console.log("\u001b[31mGame removed");
+		res.status(200).json(gameData);
+	} catch(err) {
+		res.status(500).json(err);
+	}
+});
+
 module.exports = router;
