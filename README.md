@@ -1,5 +1,6 @@
 Game Track
-Table of Contents
+
+Table of Contents:
 
 Description
 Installation
@@ -9,6 +10,7 @@ Tests
 Licenses
 Credits
 Questions
+
 Description
 This project will help any die-hard gamer to search for games, create an account and longin.He can then leave reviews and make recommendationfor new game to play.
 
@@ -22,7 +24,7 @@ Contributions
 no applicable
 
 Testing
-There is no test for thia application.
+There is no test for this application.
 
 Licenses
 License: MIT
