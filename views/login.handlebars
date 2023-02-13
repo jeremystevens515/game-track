@@ -1,18 +1,20 @@
-  <div class="container">
-       <!--put action of what server to load into-->
-       <form action="" method="post" class="form" id="login">
-            <h1 class="title">Login</h1>
-            <div class="form_input-group">
-                <input type="text" class="forminput" autofocus placeholder="Username or email">
-            </div>
-            <div class="form_input-group">
-                <input type="password" class="forminput" autofocus placeholder="Password">
-            </div>
-            <button class="btn btn-primary">Continue</button>
-            <p class="formtext">
-                <a href="/user/forgot-password" class="link link-primary">Forgot password?</a>
-            </p>
-            <p class="formtext">
-                <a  href="/user/signup" class="link link-primary">Don't have an account?</a>
-            </p>
-        </form>
+<div class="container">
+	<!--put action of what server to load into-->
+	<form action="" method="post" class="form" id="login">
+		<h1 class="title">Login</h1>
+		<div class="form_input-group">
+			<input id="username" type="text" class="forminput" autofocus placeholder="Username" />
+		</div>
+		<div class="form_input-group">
+			<input id="password" type="password" class="forminput" autofocus placeholder="Password" />
+		</div>
+		<button class="btn btn-primary">Continue</button>
+		<p class="formtext">
+			<a href="/user/forgot-password" class="link link-primary">Forgot password?</a>
+		</p>
+		<p class="formtext">
+			<a href="/user/signup" class="link link-primary">Don't have an account?</a>
+		</p>
+	</form>
+</div>
+<script href="/js/login.js"></script>

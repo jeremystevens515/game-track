@@ -95,9 +95,6 @@ router.post("/login", async (req, res) => {
 	console.log("reqest body: ", req.body);
 	try {
 		const userData = await Users.findOne({
-			// where: {
-			// 	[Op.or]: [{ username: req.body.username }, { email: req.body.email }],
-			// },
 			where: {
 				username: req.body.username,
 			},

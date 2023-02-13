@@ -13,10 +13,10 @@ Reviews.init(
 		game_id: {
 			type: DataTypes.INTEGER,
 			allowNull: false,
-			references: {
-				model: "games",
-				key: "id",
-			},
+			// references: {
+			// 	model: "games",
+			// 	key: "id",
+			// },
 		},
 		user_id: {
 			type: DataTypes.INTEGER,
