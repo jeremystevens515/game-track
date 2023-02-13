@@ -1,10 +1,14 @@
-{{#each plainWishlist as |list|}}
+<main>
+	<h2 class="text-lg px-6">Wishlist for {INSERT USER_ID HERE}</h2>
+{{#each wishListGames as |game|}}
 	<div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="..." alt="Game Cover Art" />
+		<img class="card-img-top" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{game.cover.image_id}}.jpg"
+					alt="{{game.name}}"/>
 		<div class="card-body">
-			<h5 class="card-title">{{list.game_id}}</h5>
-			<p class="card-text">Short Summary from Game</p>
-			<a href="#" class="btn btn-primary">{{list.user_id}}</a>
+			<h5 class="card-title">{{game.name}}</h5>
+			<p class="card-text">{{game.summary}}</p>
+			<a href="#" class="btn btn-primary">{{game.wishlist.id}}</a>
 		</div>
 	</div>
 {{/each}}
+</main>

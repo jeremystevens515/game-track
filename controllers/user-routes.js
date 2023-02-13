@@ -31,16 +31,26 @@ router.get("/reviews", async (req, res) => {
 
 router.get("/wishlist/", async (req, res) => {
 	try {
-		const userWishlist = await Wishlist.findAll({
+		const userWishlist = await Users.findOne({
 			where: {
 				user_id: req.session.user_id,
 			},
+			include: {
+				model: Games,
+				through: Wishlist,
+				attributes: ["name", "cover", "total_rating", "summary"],
+			},
 		});
+		// console.log(userWishlist);
 
-		const plainWishlist = userWishlist.map((list) => {
-			return list.get({ plain: true });
-		});
-		res.render("user-wishlist", { plainWishlist });
+		const plainWishlist = userWishlist.get({ plain: true });
+		// console.log("wishlist object: ", plainWishlist)
+
+		const wishListGames = plainWishlist.games;
+		console.log(wishListGames);
+
+		// res.status(200).json(userWishlist);
+		res.render("user-wishlist", { wishListGames });
 	} catch (err) {
 		res.status(500).json(err);
 	}
