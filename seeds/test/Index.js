@@ -19,11 +19,10 @@ const seedDatabase = async () => {
 		await Games.create({ ...game });
 	}
 
-	// adding reviews
-	const userReviews = await Reviews.bulkCreate(reviewData);
-
 	// adding wishlist
 	const userWishlist = await Wishlist.bulkCreate(wishlistData);
+	// adding reviews
+	const userReviews = await Reviews.bulkCreate(reviewData);
 
 	process.exit(0);
 };
