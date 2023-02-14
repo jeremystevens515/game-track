@@ -68,6 +68,7 @@ router.get("/reviews/:id", async (req, res) => {
 });
 
 router.get("/wishlist", async (req, res) => {
+
 	try {
 		const userWishlist = await Users.findOne({
 			where: {
@@ -88,7 +89,7 @@ router.get("/wishlist", async (req, res) => {
 		// console.log(wishListGames);
 
 		// res.status(200).json(userWishlist);
-		res.render("user-wishlist", { wishListGames });
+		res.render("user-wishlist", { wishListGames, loggedIn: req.session.loggedIn });
 	} catch (err) {
 		res.status(500).json(err);
 	}
