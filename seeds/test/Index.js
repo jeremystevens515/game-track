@@ -29,3 +29,5 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
+
+//games user revies wishlist 
