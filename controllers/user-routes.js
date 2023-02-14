@@ -88,7 +88,7 @@ router.get("/wishlist", async (req, res) => {
 		// console.log(wishListGames);
 
 		// res.status(200).json(userWishlist);
-		res.render("user-wishlist", { wishListGames, loggedIn: req.session.loggedIn });
+		res.render("user-wishlist", { wishListGames, plainWishlist, loggedIn: req.session.loggedIn });
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -168,6 +168,22 @@ router.post("/wishlist", async (req, res) => {
 		res.status(500).json(err);
 	}
 });
+
+// Add User review for Game
+router.post("/reviews", async (req, res) => {
+	try{
+		console.log(req.body)
+		const { review_text, user_id, game_id, rating } = req.body;
+
+		const review = { game_id: game_id, user_id: user_id, rating: rating, review_text: review_text}
+
+		await Reviews.create(review);
+		
+		res.status(200).json({ message: "Review Added!" })
+	} catch(err) {
+		res.status(500).json(err);
+	}
+})
 
 // PUT requests--------------------------------------------------
 router.put("/reviews/:id", async (req, res) => {

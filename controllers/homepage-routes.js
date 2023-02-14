@@ -34,7 +34,7 @@ router.get("/:id", async (req, res) => {
 			imageId = gamesInfo.cover.image_id;
 		}
 
-		res.render("gamepage", { gamesInfo, imageId });
+		res.render("gamepage", { gamesInfo, imageId, loggedIn: req.session.loggedIn, user_id: req.session.user_id });
 	} catch (err) {
 		console.error(err);
 		res.status(500).json({ message: "Error retriving the game info" });

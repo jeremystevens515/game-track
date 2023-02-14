@@ -10,7 +10,22 @@
     <h2 class="card-title text-center text-3xl">{{gamesInfo.dataValues.name}}</h2>
     <p class="flex-wrap">{{gamesInfo.dataValues.summary}}</p>
     <p class="flex-wrap text-left">Critic Score-{{gamesInfo.dataValues.total_rating}}%</p>
+    <p class="flex-wrap text-left">IGDB Game ID: <span id="game_id">{{gamesInfo.dataValues.id}}</span></p>
+
+<div class="form-control">
+  <label class="label">
+    {{!-- <span class="label-text">{{user_id}}</span> --}}
+  </label>
+  <textarea class="textarea textarea-bordered h-24" placeholder="Leave a review!" id="textArea"></textarea>
+  <label class="label">
+    <span class="label-text-alt">User #<span id="user_id">{{user_id}}</span> Score:</span>
+    <input type="number" id="rating" min="0" max="10" step="1" placeholder="Score out of 10" class="input input-bordered input-secondary w-full max-w-xs" />
+    <button class="btn btn-active btn-primary" id="submit">Submit</button>
+  </label>
+</div>
     <div class="card-actions justify-end">
     </div>
   </div>
 </div>
+
+<script src="/js/add-review.js"></script>
