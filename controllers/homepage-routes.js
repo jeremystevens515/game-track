@@ -52,24 +52,24 @@ router.get("/:id", async (req, res) => {
 	}
 });
 
-router.get("/games", async (req, res) => {
-	axios({
-		url: "https://api/igdb.com/v4/games",
-		method: "post",
-		headers: {
-			"Client-ID": "beir23ddvqc1dqg8g0myvw79fhzs0b",
-			"Authorization": "Bearer 9oir2hdkr8f6gung19onrtk2fnwin6",
-		},
-		data: `fields id, cover.image_id, first_release_date, genres.name, involved_companies.company.name, involved_companies.publisher, name, platforms.name, similar_games, storyline, summary, total_rating, total_rating_count;
-		where id = 19560;`,
-	}).then((response) => {
-		res
-			.status(200)
-			.json(response)
-			.catch((err) => {
-				console.error(err);
-			});
-	});
-});
+// router.get("/games", async (req, res) => {
+// 	axios({
+// 		url: "https://api/igdb.com/v4/games",
+// 		method: "post",
+// 		headers: {
+// 			"Client-ID": "beir23ddvqc1dqg8g0myvw79fhzs0b",
+// 			"Authorization": "Bearer 9oir2hdkr8f6gung19onrtk2fnwin6",
+// 		},
+// 		data: `fields id, cover.image_id, first_release_date, genres.name, involved_companies.company.name, involved_companies.publisher, name, platforms.name, similar_games, storyline, summary, total_rating, total_rating_count;
+// 		where id = 19560;`,
+// 	}).then((response) => {
+// 		res
+// 			.status(200)
+// 			.json(response)
+// 			.catch((err) => {
+// 				console.error(err);
+// 			});
+// 	});
+// });
 
 module.exports = router;
