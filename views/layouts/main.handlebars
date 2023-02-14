@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="" />
-		<link rel="stylesheet" href="/public/style.css" />
+		<link rel="stylesheet" href="" />
 		<link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css" rel="stylesheet" type="text/css" />
 		<script src="https://cdn.tailwindcss.com"></script>
 		<title>GameTrack</title>
@@ -17,10 +17,12 @@
 				</div>
 				<div class="flex-none gap-2">
 					<div class="form-control">
-						<input type="text" placeholder="Search" class="input input-bordered" />
+						<form action ="/search" method ="GET">
+						<input type="text" placeholder="Search" name="searchTerm" class="input input-bordered" />
+						</form>
 					</div>
 					<div class="dropdown dropdown-end">
-						<label tabindex="0" class="btn btn-ghost btn-circle avatar">
+						<label tabindex="0" class="btn btn-accent btn-circle avatar">
 							<div class="w-10 rounded-full">
 								<img src="" />
 							</div>
@@ -53,5 +55,8 @@
 	<body class="">
 		{{{body}}}
 		<script src="./js/index.js"></script>
+		<script src ="./js/search.js"></script>
 	</body>
+
+
 </html>

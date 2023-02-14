@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Users, Reviews, Wishlist, Games } = require("../models");
+const { findAll } = require("../models/user/Users");
 
 // get request to / getting game data like name cover and genre of game
 router.get("/", async (req, res) => {
@@ -41,16 +42,18 @@ router.get("/:id", async (req, res) => {
 				"similar_games",
 			],
 		});
+		console.log(gamesInfo)
 		let imageId;
 		if (gamesInfo.cover) {
 			imageId = gamesInfo.cover.image_id;
 		}
-		res.render("gamepage", { gamesInfo, imageId });
+		res.render("gamepage", { gamesInfo, imageId});
 	} catch (err) {
 		console.error(err);
 		res.status(500).json({ message: "Error retriving the game info" });
 	}
 });
+
 
 //attempt at fetching the api data instead of the seed data
 // router.get('/', async (req, res) => {
