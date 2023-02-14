@@ -1,20 +1,22 @@
-<div class="container">
-	<!--put action of what server to load into-->
-	<form class="form" id="login">
-		<h1 class="title">Login</h1>
-		<div class="form_input-group">
-			<input id="username" type="text" class="forminput" autofocus placeholder="Username" />
+<main class="flex place-content-center">
+	<div class="card w-96 bg-neutral shadow-xl">
+		<div class="card-body">
+			<h2 class="card-title">Login</h2>
+			<div class="form_input-group">
+				<input id="username" type="text" class="forminput" autofocus placeholder="Username" />
+			</div>
+			<div class="form_input-group">
+				<input id="password" type="password" class="forminput" autofocus placeholder="Password" />
+			</div>
+			<button id="continue" class="btn btn-primary">Continue</button>
+			<p class="formtext">
+				<a href="/user/forgot-password" class="link link-primary">Forgot password?</a>
+			</p>
+			<p class="formtext">
+				<a href="/user/signup" class="link link-primary">Don't have an account?</a>
+			</p>
 		</div>
-		<div class="form_input-group">
-			<input id="password" type="password" class="forminput" autofocus placeholder="Password" />
-		</div>
-		<button id="continue" class="btn btn-primary">Continue</button>
-		<p class="formtext">
-			<a href="/user/forgot-password" class="link link-primary">Forgot password?</a>
-		</p>
-		<p class="formtext">
-			<a href="/user/signup" class="link link-primary">Don't have an account?</a>
-		</p>
-	</form>
-</div>
+	</div>
+</main>
+
 <script src="/js/login.js"></script>

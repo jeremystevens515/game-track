@@ -1,18 +1,21 @@
-<div id="signup-form" class="container-secondary">
-	<h1 class="title">Create Account</h1>
-	<div>
-		<input type="text" id="signupUsername" class="forminput-secondary" placeholder="Username" />
+<main class="flex place-content-center">
+	<div class="card w-96 bg-neutral shadow-xl">
+		<div class="card-body">
+			<h1 class="card-title">Create Account</h1>
+			<div>
+				<input type="text" id="signupUsername" class="forminput-secondary" placeholder="Username" />
+			</div>
+			<div>
+				<input type="password" class="forminput-secondary" id="password" placeholder="Password" />
+			</div>
+			<div>
+				<input type="password" class="forminput-secondary" id="confirm-password" placeholder="Confirm password" />
+			</div>
+			<button class="btn btn-primary">Continue</button>
+			<p class="formtext">
+				<a href="/user/login" class="link link-primary">Already have an account?</a>
+			</p>
+		</div>
 	</div>
-	<div>
-		<input type="password" class="forminput-secondary" id="password" placeholder="Password" />
-	</div>
-	<div>
-		<input type="password" class="forminput-secondary" id="confirm-password" placeholder="Confirm password" />
-	</div>
-	<button class="btn btn-primary">Continue</button>
-	<p class="formtext">
-		<a href="./login.handelbars" class="link link-primary">Already have an account?</a>
-	</p>
-</div>
-
+</main>
 <script src="/js/signup.js"></script>
