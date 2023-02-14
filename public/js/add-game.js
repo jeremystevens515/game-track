@@ -17,7 +17,9 @@ async function addGame(event){
     });
 
     if (response.ok) { 
-        console.log("Game Added!");
+        const alert = document.createElement('p');
+        alert.textContent = "ed to Wishlist!"
+        event.target.appendChild(alert);
     } 
 }
 
