@@ -12,10 +12,8 @@ router.get("/", async (req, res) => {
 			const genresNames = game.genres.map((genre) => genre.name);
 			game.genres = JSON.stringify(genresNames);
 			game.cover = game.cover.image_id;
-			// game.coverImage = game.cover.id
 		});
-		console.log(req.session);
-		console.log("homepage", req.session.loggedIn);
+		// console.log("homepage: user logged in?", req.session.loggedIn + "\nuser_id:", req.session.user_id);
 		res.render("homepage", {
 			gamesData,
 			loggedIn: req.session.loggedIn,
@@ -87,35 +85,3 @@ router.get("/:id", async (req, res) => {
 // });
 
 module.exports = router;
-
-//what the data im receiving looks like just for reference
-//[
-// games {
-//     dataValues: { name: 'God of War', cover: [Object], genres: [Array] },
-//     _previousDataValues: { name: 'God of War', cover: [Object], genres: [Array] },
-//     uniqno: 1,
-//     _changed: Set(0) {},
-//     _options: {
-//       isNewRecord: false,
-//       _schema: null,
-//       _schemaDelimiter: '',
-//       raw: true,
-//       attributes: [Array]
-//     },
-//     isNewRecord: false
-//   },
-//   games {
-//     dataValues: { name: "Marvel's Spider-Man", cover: [Object], genres: [Array] },
-//     _previousDataValues: { name: "Marvel's Spider-Man", cover: [Object], genres: [Array] },
-//     uniqno: 1,
-//     _changed: Set(0) {},
-//     _options: {
-//       isNewRecord: false,
-//       _schema: null,
-//       _schemaDelimiter: '',
-//       raw: true,
-//       attributes: [Array]
-//     },
-//     isNewRecord: false
-//   }
-// ]

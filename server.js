@@ -7,7 +7,7 @@ const routes = require("./controllers/index");
 const sequelize = require("./config/connection");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-const models = require("./models");
+// const models = require("./models");
 const helpers = require("./utils/helpers");
 
 const app = express();
@@ -24,7 +24,7 @@ const sess = {
 		sameSite: "strict",
 	},
 	resave: false,
-	saveUninitialized: false,
+	saveUninitialized: true,
 	store: new SequelizeStore({
 		db: sequelize,
 	}),

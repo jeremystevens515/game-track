@@ -16,8 +16,8 @@ async function addGame(event){
         },
     });
 
-    if (response.ok) {
-        document.location.replace('/');
+    if (response.ok) { 
+        console.log("Game Added!");
     } 
 }
 

@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS gameTrack_db;
+DROP DATABASE IF EXISTS gametrack_db;
 
-CREATE DATABASE gameTrack_db;
+CREATE DATABASE gametrack_db;

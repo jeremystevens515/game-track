@@ -1,22 +1,19 @@
   <div class="container-secondary"></div>
     <!--put action of what server to load into-->
-    <form action="" method="post" id="createAccount">
         <h1 class="title">Create Account</h1>
-        <div class="formmessage formmessage--error"></div>
-            <input type="text" id="signupUsername" class="forminput-secondary" autofocus placeholder="Username">
+        <div></div>
+            <input type="text" id="signupUsername" class="forminput-secondary"  placeholder="Username">
             <div class="forminput-error-message"></div>
         </div>
-            <input type="text" class="forminput-secondary" autofocus placeholder="Email Address">
+            <input type="password" class="forminput-secondary" id="password" placeholder="Password">
             <div class="forminput-error-message"></div>
         </div>
-            <input type="password" class="forminput-secondary" autofocus placeholder="Password">
+            <input type="password" class="forminput-secondary"   placeholder="Confirm password">
             <div class="forminput-error-message"></div>
         </div>
-            <input type="password" class="forminput-secondary" autofocus placeholder="Confirm password">
-            <div class="forminput-error-message"></div>
-        </div>
-        <button class="btn btn_secondary btn-primary">Continue</button>
+        <button class="btn btn-primary">Continue</button>
         <p class="formtext">
             <a href="./login.handelbars" class="link link-primary">Already have an account?</a>
         </p>
-    </form>
+
+    <script src="/js/signup.js"></script>
