@@ -14,20 +14,20 @@ const seedDatabase = async () => {
 		await Games.create({ ...game });
 	}
 
-	// adding users
-	const users = await Users.bulkCreate(userData, {
-		individualHooks: true, //to hash password
-	});
+	// // adding users
+	// const users = await Users.bulkCreate(userData, {
+	// 	individualHooks: true, //to hash password
+	// });
 
-	// adding reviews
-	const userReviews = await Reviews.bulkCreate(reviewData);
+	// // adding reviews
+	// const userReviews = await Reviews.bulkCreate(reviewData);
 
-	// adding wishlist
-	const userWishlist = await Wishlist.bulkCreate(wishlistData);
+	// // adding wishlist
+	// const userWishlist = await Wishlist.bulkCreate(wishlistData);
 
 	process.exit(0);
 };
 
 seedDatabase();
 
-//games user revies wishlist 
+//games user revies wishlist
