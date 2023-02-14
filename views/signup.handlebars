@@ -1,19 +1,18 @@
-  <div class="container-secondary"></div>
-    <!--put action of what server to load into-->
-        <h1 class="title">Create Account</h1>
-        <div></div>
-            <input type="text" id="signupUsername" class="forminput-secondary"  placeholder="Username">
-            <div class="forminput-error-message"></div>
-        </div>
-            <input type="password" class="forminput-secondary" id="password" placeholder="Password">
-            <div class="forminput-error-message"></div>
-        </div>
-            <input type="password" class="forminput-secondary"   placeholder="Confirm password">
-            <div class="forminput-error-message"></div>
-        </div>
-        <button class="btn btn-primary">Continue</button>
-        <p class="formtext">
-            <a href="./login.handelbars" class="link link-primary">Already have an account?</a>
-        </p>
+<div id="signup-form" class="container-secondary">
+	<h1 class="title">Create Account</h1>
+	<div>
+		<input type="text" id="signupUsername" class="forminput-secondary" placeholder="Username" />
+	</div>
+	<div>
+		<input type="password" class="forminput-secondary" id="password" placeholder="Password" />
+	</div>
+	<div>
+		<input type="password" class="forminput-secondary" id="confirm-password" placeholder="Confirm password" />
+	</div>
+	<button class="btn btn-primary">Continue</button>
+	<p class="formtext">
+		<a href="./login.handelbars" class="link link-primary">Already have an account?</a>
+	</p>
+</div>
 
-    <script src="/js/signup.js"></script>
+<script src="/js/signup.js"></script>

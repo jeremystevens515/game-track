@@ -68,7 +68,6 @@ router.get("/reviews/:id", async (req, res) => {
 });
 
 router.get("/wishlist", async (req, res) => {
-
 	try {
 		const userWishlist = await Users.findOne({
 			where: {
@@ -99,14 +98,12 @@ router.get("/wishlist", async (req, res) => {
 // create account
 router.post("/signup", async (req, res) => {
 	try {
-		const { username, password } = req.body;
-		const user = { username: username, password: password };
-		// console.log(user);
-		await Users.create(user);
-		req.session.save(() => {
-			req.session.loggedIn = true;
-			// console.log(req.session);
-		});
+		const newUser = await Users.create(req.body);
+		const getNewUser = await Users.findOne({ where: { username: req.body.username } });
+
+		req.session.loggedIn = true;
+		req.session.user_id = getNewUser.id;
+
 		res.status(200).json({ message: "great success!" });
 	} catch (err) {
 		res.status(500).json(err);
