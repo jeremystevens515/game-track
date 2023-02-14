@@ -15,19 +15,19 @@ Games.init(
 		},
 		involved_companies: {
 			type: DataTypes.JSON,
-			allowNull: false,
+			allowNull: true,
 		},
 		first_release_date: {
 			type: DataTypes.INTEGER,
-			allowNull: false,
+			allowNull: true,
 		},
 		cover: {
 			type: DataTypes.JSON,
-			allowNull: false,
+			allowNull: true,
 		},
 		genres: {
 			type: DataTypes.JSON,
-			allowNull: false,
+			allowNull: true,
 		},
 		platforms: {
 			type: DataTypes.JSON,
@@ -43,11 +43,11 @@ Games.init(
 		},
 		total_rating: {
 			type: DataTypes.INTEGER,
-			allowNull: false,
+			allowNull: true,
 		},
 		total_rating_count: {
 			type: DataTypes.INTEGER,
-			allowNull: false,
+			allowNull: true,
 		},
 		similar_games: {
 			type: DataTypes.JSON,
