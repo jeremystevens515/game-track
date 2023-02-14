@@ -25,6 +25,7 @@ router.get("/reviews", async (req, res) => {
 	// 	res.redirect;
 	// }
 	console.log("user_id reviews:", req.session.user_id);
+	console.log("user logged in? ", req.session.loggedIn);
 	try {
 		const userReviews = await Reviews.findAll({
 			where: {
@@ -39,7 +40,10 @@ router.get("/reviews", async (req, res) => {
 			return review.get({ plain: true });
 		});
 		console.log("userReviews object: ", plainReviews);
-		res.render("user-reviews", { plainReviews });
+		res.render("user-reviews", {
+			plainReviews,
+			loggedIn: req.session.loggedIn,
+		});
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -54,13 +58,13 @@ router.get("/wishlist", async (req, res) => {
 			include: {
 				model: Games,
 				through: Wishlist,
-				attributes: ["id", "name", "cover", "total_rating", "summary"]
-			}
+				attributes: ["id", "name", "cover", "total_rating", "summary"],
+			},
 		});
 		console.log(userWishlist);
 
 		const plainWishlist = userWishlist.get({ plain: true });
-		console.log("wishlist object: ", plainWishlist)
+		console.log("wishlist object: ", plainWishlist);
 
 		const wishListGames = plainWishlist.games;
 		console.log(wishListGames);
@@ -92,12 +96,8 @@ router.post("/signup", async (req, res) => {
 
 // login
 router.post("/login", async (req, res) => {
-	console.log("reqest body: ", req.body);
 	try {
 		const userData = await Users.findOne({
-			// where: {
-			// 	[Op.or]: [{ username: req.body.username }, { email: req.body.email }],
-			// },
 			where: {
 				username: req.body.username,
 			},
@@ -109,22 +109,16 @@ router.post("/login", async (req, res) => {
 		}
 
 		const validatePassword = await userData.checkPassword(req.body.password);
-
-		if (!validatePassword) {
+		if (validatePassword === false) {
+			console.log("Please enter a valid password");
 			res.status(400).json({ message: "Incorrect password" });
+			return;
 		}
 
-		// set session variables
-		req.session.save(() => {
-			req.session.user_id = userData.id;
-			req.session.loggedIn = true;
-			console.log(req.session.user_id);
-			console.log(req.session.loggedIn);
-			//res.status(200).json({ message: "successful login!", session: req.session });
-		});
-		if (req.session.loggedIn) {
-			res.redirect("/");
-		}
+		req.session.user_id = userData.id;
+		req.session.loggedIn = true;
+
+		res.status(200).json({ messaged: "successful login" });
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -132,7 +126,7 @@ router.post("/login", async (req, res) => {
 
 // Logout
 router.post("/logout", async (req, res) => {
-	console.log(req.session);
+	// console.log(req.session);
 	try {
 		req.session.destroy(() => {
 			res.status(204).json({ message: "logout successful", session: req.session }).end();
@@ -145,38 +139,37 @@ router.post("/logout", async (req, res) => {
 // Add game to Wishlist
 router.post("/wishlist", async (req, res) => {
 	// console.log("request received", req.body)
-	try{
+	try {
 		const gameId = req.body.game_id;
 		const userId = req.session.user_id;
 
-	const wish = { game_id: gameId, user_id: userId}
+		const wish = { game_id: gameId, user_id: userId };
 
-	await Wishlist.create(wish)
+		await Wishlist.create(wish);
 
-	res.status(200).json({message: "Success! Game added to Wishlist"})
-
-	} catch(err){
+		res.status(200).json({ message: "Success! Game added to Wishlist" });
+	} catch (err) {
 		res.status(500).json(err);
 	}
 });
 
 // Remove game from Wishlist
-router.delete("/wishlist", async(req, res) => {
-	console.log('request received', req.body)
-	try{
+router.delete("/wishlist", async (req, res) => {
+	console.log("request received", req.body);
+	try {
 		const gameData = await Wishlist.destroy({
 			where: {
 				game_id: req.body.id,
 				user_id: req.session.user_id,
-			}
+			},
 		});
-		if(!gameData){
-			res.status(404).json({ message: "This game wasn't on your wishlist"});
+		if (!gameData) {
+			res.status(404).json({ message: "This game wasn't on your wishlist" });
 			return;
 		}
 		console.log("\u001b[31mGame removed");
 		res.status(200).json(gameData);
-	} catch(err) {
+	} catch (err) {
 		res.status(500).json(err);
 	}
 });

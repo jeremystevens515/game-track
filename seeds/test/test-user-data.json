@@ -1,12 +1,10 @@
 [
 	{
 		"username": "JohnDoeBoi",
-		"email": "johndoe@doeboi.com",
 		"password": "password1234"
 	},
 	{
 		"username": "JaneDoeGirl",
-		"email": "janedoe@doegirl.com",
 		"password": "anotherpassword5678"
 	}
 ]

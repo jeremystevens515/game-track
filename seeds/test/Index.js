@@ -9,20 +9,21 @@ const wishlistData = require("./test-wishlist.json");
 const seedDatabase = async () => {
 	await sequelize.sync({ force: true });
 
-	// adding users
-	const users = await Users.bulkCreate(userData, {
-		individualHooks: true, //to hash password
-	});
-
 	// adding games
 	for (const game of gamesData) {
 		await Games.create({ ...game });
 	}
 
-	// adding wishlist
-	const userWishlist = await Wishlist.bulkCreate(wishlistData);
+	// adding users
+	const users = await Users.bulkCreate(userData, {
+		individualHooks: true, //to hash password
+	});
+
 	// adding reviews
 	const userReviews = await Reviews.bulkCreate(reviewData);
+
+	// adding wishlist
+	const userWishlist = await Wishlist.bulkCreate(wishlistData);
 
 	process.exit(0);
 };

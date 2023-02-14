@@ -1,26 +1,29 @@
 <main>
-{{#each gamesData}}
-<div class="card lg:card-side  shadow-xl">
-  <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="Album"/></figure>
-  <div class="card-body">
-    <h2 class="card-title text-3xl" id="name">{{this.dataValues.name}}</h2>
-    <p>ID: <span id="game_id">{{this.dataValues.id}}</span></p>
-    <p class="text-xl">Genres:{{this.dataValues.genres}}</p>
-    <div class="card-actions justify-end">
-      <a class="btn btn-accent" href="/{{this.dataValues.id}}">Open</a>
-      <button class="btn btn-primary" id="{{this.dataValues.id}}">ADD</button>
-    </div>
-  </div>
-</div>
-<br>
-<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
-  <div class="card-body">
-    <h2 class="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-  </div>
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-</div>
-{{/each}}
+	{{#each gamesData}}
+		<div class="card lg:card-side shadow-xl">
+			<figure><img
+					src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg"
+					alt="Album"
+				/></figure>
+			<div class="card-body">
+				<h2 class="card-title text-3xl" id="name">{{this.dataValues.name}}</h2>
+				<p>ID: <span id="game_id">{{this.dataValues.id}}</span></p>
+				<p class="text-xl">Genres:{{this.dataValues.genres}}</p>
+				<div class="card-actions justify-end">
+					<a class="btn btn-accent" href="/{{this.dataValues.id}}">Open</a>
+					<button class="btn btn-primary" id="{{this.dataValues.id}}">ADD</button>
+				</div>
+			</div>
+		</div>
+		<br />
+		<div class="card w-96 bg-base-100 shadow-xl mx-auto flex">
+			<div class="card-body">
+				<h2 class="card-title">Shoes!</h2>
+				<p>If a dog chews shoes whose shoes does he choose?</p>
+			</div>
+			<figure><img src="" alt="Shoes" /></figure>
+		</div>
+	{{/each}}
 </main>
 
 <script src="/js/add-game.js"></script>
@@ -28,4 +31,3 @@
 {{!-- "https://images.igdb.com/igdb/image/upload/t_cover_big/{{this.dataValues.cover}}.jpg" alt="cover image" --}}
 {{!-- {{this.dataValues.name}} --}}
 {{!-- Genres:{{this.dataValues.genres}} --}}
-    

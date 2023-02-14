@@ -14,7 +14,7 @@ Wishlist.init(
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
-				model: "Games",
+				model: "games",
 				key: "id",
 			},
 		},
@@ -22,7 +22,7 @@ Wishlist.init(
 			type: DataTypes.INTEGER,
 			allowNull: false,
 			references: {
-				model: "Users",
+				model: "users",
 				key: "id",
 			},
 		},
