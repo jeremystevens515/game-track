@@ -80,15 +80,15 @@ router.get("/wishlist", async (req, res) => {
 // create account
 router.post("/signup", async (req, res) => {
 	try {
-		const userData = await Users.create(req.body);
+		const { username, password }  = req.body;
+		const user = { username: username, password: password }
+		console.log(user)
+		await Users.create(user);
 		req.session.save(() => {
-			req.session.user_id = userData.id;
 			req.session.loggedIn = true;
 			console.log(req.session);
 		});
-		if (req.session.loggedIn) {
-			res.redirect("/");
-		}
+		res.status(200).json({message: "great success!"})
 	} catch (err) {
 		res.status(500).json(err);
 	}
