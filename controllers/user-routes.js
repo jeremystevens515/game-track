@@ -19,13 +19,8 @@ router.get("/forgot-password", async (req, res) => {
 });
 
 // get reviews page if user logged in
-// get reviews based on user id
+// displays all reviews based on user id
 router.get("/reviews", async (req, res) => {
-	// if (!req.session.loggedIn) {
-	// 	res.redirect;
-	// }
-	console.log("user_id reviews:", req.session.user_id);
-	console.log("user logged in? ", req.session.loggedIn);
 	try {
 		const userReviews = await Reviews.findAll({
 			where: {
@@ -39,9 +34,32 @@ router.get("/reviews", async (req, res) => {
 		const plainReviews = await userReviews.map((review) => {
 			return review.get({ plain: true });
 		});
-		console.log("userReviews object: ", plainReviews);
 		res.render("user-reviews", {
 			plainReviews,
+			loggedIn: req.session.loggedIn,
+		});
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
+
+// display one review based on user id and game id
+router.get("/reviews/:id", async (req, res) => {
+	console.log(req.session.user_id);
+	try {
+		const userReview = await Reviews.findOne({
+			where: {
+				user_id: req.session.user_id,
+				game_id: req.params.id,
+			},
+			include: {
+				model: Games,
+				attributes: ["id", "name", "cover", "total_rating"],
+			},
+		});
+		const plainReview = await userReview.get({ plain: true });
+		res.render("user-reviews-edit", {
+			review: plainReview,
 			loggedIn: req.session.loggedIn,
 		});
 	} catch (err) {
@@ -154,20 +172,14 @@ router.post("/wishlist", async (req, res) => {
 });
 
 // PUT requests--------------------------------------------------
-router.put("/reviews", async (req, res) => {
-	console.log("req.body", req.body);
-	console.log("session", req.session);
-	const { game_id, review_text } = req.body;
+router.put("/reviews/:id", async (req, res) => {
 	try {
-		const reviewData = await Reviews.update(
-			{ review_text: review_text },
-			{
-				where: {
-					user_id: req.session.user_id,
-					game_id: game_id,
-				},
-			}
-		);
+		const reviewData = await Reviews.update(req.body, {
+			where: {
+				user_id: req.session.user_id,
+				game_id: req.params.id,
+			},
+		});
 		res.status(200).json(reviewData);
 	} catch (err) {
 		res.status(500).json(err);

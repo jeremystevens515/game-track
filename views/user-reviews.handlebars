@@ -16,12 +16,10 @@
 					<textarea id="text-editor-textarea" class="textarea textarea-primary">{{review.review_text}}</textarea>
 				</p>
 				{{!change text content of button to submit when textarea is visible}}
-				<div class="card-actions justify-end">
+				<a href="/user/reviews/{{review.game.id}}" class="card-actions justify-end">
 					<button data-gameId="{{review.game.id}}" id="edit-btn" class="btn btn-primary">Edit</button>
-				</div>
+				</a>
 			</div>
 		</div>
 	{{/each}}
 </main>
-
-<script src="/js/reviews.js"></script>
