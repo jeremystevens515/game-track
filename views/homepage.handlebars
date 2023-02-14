@@ -6,7 +6,7 @@
     <h2 class="card-title text-3xl" id="name">{{this.dataValues.name}}</h2>
     <p>ID: <span id="game_id">{{this.dataValues.id}}</span></p>
     <p class="text-xl">Genres:{{this.dataValues.genres}}</p>
-    <div class="card-actions justify-end">
+    <div class="card-actions justify-end" id="button-holder">
       <a class="btn btn-accent" href="/{{this.dataValues.id}}">Open</a>
       <button class="btn btn-primary" id="{{this.dataValues.id}}">ADD</button>
     </div>

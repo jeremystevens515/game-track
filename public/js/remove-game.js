@@ -16,7 +16,7 @@ async function removeGame(event){
     });
 
     if (response.ok) {
-        document.location.replace('/user/wishlist/1');
+        document.location.reload();
     } 
 }
 

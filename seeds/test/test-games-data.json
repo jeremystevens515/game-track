@@ -1,58 +1,11 @@
 [
 	{
-		"id": 19565,
+		"id": 11208,
 		"cover": {
-			"id": 81907,
-			"image_id": "co1r77"
+			"id": 266131,
+			"image_id": "co5pcj"
 		},
-		"first_release_date": 1536278400,
-		"genres": [
-			{
-				"id": 25,
-				"name": "Hack and slash/Beat 'em up"
-			},
-			{
-				"id": 31,
-				"name": "Adventure"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 36448,
-				"company": {
-					"id": 834,
-					"name": "Insomniac Games"
-				},
-				"publisher": false
-			},
-			{
-				"id": 36449,
-				"company": {
-					"id": 10100,
-					"name": "Sony Interactive Entertainment"
-				},
-				"publisher": true
-			}
-		],
-		"name": "Marvel's Spider-Man",
-		"platforms": [
-			{
-				"id": 48,
-				"name": "PlayStation 4"
-			}
-		],
-		"similar_games": [1877, 4755, 19560, 19561, 19564, 25076, 26192, 26950, 75235, 76882],
-		"summary": "Starring the world’s most iconic Super Hero, Spider-Man features the acrobatic abilities, improvisation and web-slinging that the wall-crawler is famous for, while also introducing elements never-before-seen in a Spider-Man game. From traversing with parkour and utilizing the environment, to new combat and blockbuster set pieces, it’s Spider-Man unlike any you’ve played before.",
-		"total_rating": 88.7376893017435,
-		"total_rating_count": 1112
-	},
-	{
-		"id": 19560,
-		"cover": {
-			"id": 85062,
-			"image_id": "co1tmu"
-		},
-		"first_release_date": 1524182400,
+		"first_release_date": 1487808000,
 		"genres": [
 			{
 				"id": 12,
@@ -61,39 +14,35 @@
 			{
 				"id": 25,
 				"name": "Hack and slash/Beat 'em up"
-			},
-			{
-				"id": 31,
-				"name": "Adventure"
 			}
 		],
 		"involved_companies": [
 			{
-				"id": 36378,
+				"id": 42359,
 				"company": {
-					"id": 10100,
-					"name": "Sony Interactive Entertainment"
+					"id": 852,
+					"name": "PlatinumGames"
+				},
+				"publisher": false
+			},
+			{
+				"id": 42360,
+				"company": {
+					"id": 26,
+					"name": "Square Enix"
 				},
 				"publisher": true
 			},
 			{
-				"id": 38707,
+				"id": 197510,
 				"company": {
-					"id": 4357,
-					"name": "SIE Santa Monica Studio"
-				},
-				"publisher": false
-			},
-			{
-				"id": 154522,
-				"company": {
-					"id": 38814,
-					"name": "Jetpack Interactive"
+					"id": 4653,
+					"name": "ILCA"
 				},
 				"publisher": false
 			}
 		],
-		"name": "God of War",
+		"name": "NieR: Automata",
 		"platforms": [
 			{
 				"id": 6,
@@ -104,175 +53,100 @@
 				"name": "PlayStation 4"
 			}
 		],
-		"similar_games": [19564, 19565, 22387, 25076, 27092, 28168, 36198, 36926, 54775, 55199],
-		"storyline": "Many years have passed since Kratos, Spartan warrior and former Greek God of War, took his vengeance against the Greek Gods, and he now lives with his young son Atreus in ancient Norway in the realm of Midgard. The game begins after the death of the Jötunn warrior Faye, Kratos' second wife and Atreus' mother, whose last request was for her ashes to be spread at the highest speak of the nine realms. Kratos and Atreus prepare a funeral pyre for her, mourn her death and soon go on a hunt as per Kratos' desire. However much to Kratos' disappointment, Atreus proves his incompetence and lack of focus, making Kratos reconsider taking Atreus in his journey. Kratos is soon attacked by a mysterious stranger with godlike powers, and who cannot feel anything physically. After seemingly killing him, Kratos reluctantly takes Atreus with him and begins their journey.",
-		"summary": "God of War is the sequel to God of War III as well as a continuation of the canon God of War chronology. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his son Atreus in the years since the third game. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
-		"total_rating": 95.24781934519115,
-		"total_rating_count": 1848
+		"similar_games": [7350, 9278, 11156, 11646, 19164, 19564, 33153, 54775, 54842, 55038],
+		"storyline": "The distant future…\nInvaders from another world attack without warning, unleashing a new type of threat: weapons known as “machine lifeforms.” In the face of this insurmountable threat, mankind is driven from Earth and takes refuge on the Moon.\n\nThe Council of Humanity organizes a resistance of android soldiers in an effort to take back their planet. To break the deadlock, the Resistance deploys a new unit of android infantry: YoRHa .\n\nIn the forsaken wasteland below, the war between the machines and the androids rages on. A war that is soon to unveil the long-forgotten truth of this world...",
+		"summary": "NieR: Automata tells the story of androids 2B, 9S and A2 and their battle to reclaim the machine-driven dystopia overrun by powerful machines.",
+		"total_rating": 88.6013557021656,
+		"total_rating_count": 948
 	},
 	{
-		"id": 118008,
+		"id": 740,
 		"cover": {
-			"id": 90207,
-			"image_id": "co1xlr"
+			"id": 128403,
+			"image_id": "co2r2r"
 		},
-		"first_release_date": 1589500800,
+		"first_release_date": 1005782400,
 		"genres": [
 			{
-				"id": 13,
-				"name": "Simulator"
-			},
-			{
-				"id": 15,
-				"name": "Strategy"
-			},
-			{
-				"id": 32,
-				"name": "Indie"
+				"id": 5,
+				"name": "Shooter"
 			}
 		],
 		"involved_companies": [
 			{
-				"id": 91383,
+				"id": 22512,
 				"company": {
-					"id": 23964,
-					"name": "Plasticity Studios"
+					"id": 53,
+					"name": "Microsoft Game Studios"
 				},
 				"publisher": true
-			}
-		],
-		"name": "Tabletop Playground",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [18623, 31515, 33603, 36962, 51577, 55888, 65827, 79134, 102163, 107992],
-		"summary": "Play any kind of tabletop game you want online! You make the rules in a physically simulated 3D sandbox. Or create your own games using the integrated editor and share them with the world!"
-	},
-	{
-		"id": 174288,
-		"first_release_date": 1632441600,
-		"genres": [
-			{
-				"id": 13,
-				"name": "Simulator"
 			},
 			{
-				"id": 33,
-				"name": "Arcade"
-			}
-		],
-		"name": "Apollo LM",
-		"platforms": [
-			{
-				"id": 39,
-				"name": "iOS"
-			}
-		],
-		"similar_games": [25905, 27378, 38967, 87485, 90965, 101573, 105264, 112078, 112754, 233628],
-		"summary": "3D fly and land the Apollo Lunar Module on the moon! Easy and precise control with one finger. Real moon topology mapping. Rewrite humanity's greatest achievement and... Land the 1st woman on the moon! Place your country's flag on the moon! Apollo mission dialogue voices transcription. Be Miss or Mr Armstrong. Evolve your Astronaut level. Evolve the Lunar Module. Challenge your astronaut friends through the Game Center."
-	},
-	{
-		"id": 201465,
-		"cover": {
-			"id": 233251,
-			"image_id": "co4zz7"
-		},
-		"first_release_date": 1654819200,
-		"genres": [
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 179921,
+				"id": 22513,
 				"company": {
-					"id": 42377,
-					"name": "Shroudy Software"
+					"id": 620,
+					"name": "Bungie"
+				},
+				"publisher": false
+			},
+			{
+				"id": 22514,
+				"company": {
+					"id": 130,
+					"name": "MacSoft Games"
 				},
 				"publisher": true
+			},
+			{
+				"id": 46789,
+				"company": {
+					"id": 148,
+					"name": "Gearbox Software"
+				},
+				"publisher": false
+			},
+			{
+				"id": 46790,
+				"company": {
+					"id": 378,
+					"name": "Westlake Interactive"
+				},
+				"publisher": false
 			}
 		],
-		"name": "Cropped",
+		"name": "Halo: Combat Evolved",
 		"platforms": [
 			{
 				"id": 6,
 				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [32902, 37419, 40524, 76263, 96217, 105233, 106987, 111130, 113895, 119121],
-		"summary": "Cropped is a first-person action horror adventure - Survive the night as the farm you've arrived at has taken a turn for the worse..."
-	},
-	{
-		"id": 127004,
-		"cover": {
-			"id": 186262,
-			"image_id": "co3zpy"
-		},
-		"first_release_date": 1641513600,
-		"genres": [
+			},
 			{
-				"id": 13,
-				"name": "Simulator"
+				"id": 11,
+				"name": "Xbox"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
 			},
 			{
 				"id": 14,
-				"name": "Sport"
+				"name": "Mac"
 			}
 		],
-		"name": "FIshing Adventure VR",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [101573, 109606, 112846, 114285, 115869, 116352, 116353, 118871, 119422, 120126],
-		"summary": "Fishing Adventure VR is a typical fishing game, where the player can (drums) catch different fish species! Fish in USA, Hawaii and other unique fisheries."
+		"similar_games": [231, 241, 296, 356, 564, 571, 623, 989, 2031, 6803],
+		"storyline": "After the fall of Reach, The Pillar of Autumn, the only surviving human ship, makes a random slip-space jump away from the planet, so as not to lead the Covenant to Earth. When the Autumn drops out of slip-space, they find themselves next to a large, artificial, ring-world. A Covenant fleet hiding behind the adjacent planet engages the Autumn, the biologically augmented super-soldier John 117, or the Master Chief, is taken out of cryostasis. He proceeds to the bridge while fighting hordes of boarding Covenant forces. The Master Chief retrieves the ship-board AI (Artificial Intelligence) Cortana from the Captain of the vessel, Captain Keyes. The Chief and Cortana board an escape craft and begin to drop towards the surface of the ring-world. The Chief is the only one in his escape pod to survive the impact, and sneaks away from the crash site. After gathering all the survivors from the Autumn, the Chief makes an attack run on a Covenant ship in order to save Captain Keyes. Keyes tells the Chief and Cortana that the Covenant call this world Halo. Cortana realizes that it has",
+		"summary": "Bent on Humankind's extermination, a powerful fellowship of alien races known as the Covenant is wiping out Earth's fledgling interstellar empire. Climb into the boots of Master Chief, a biologically altered super-soldier, as you and the other surviving defenders of a devastated colony-world make a desperate attempt to lure the alien fleet away from earth. Shot down and marooned on the ancient ring-world Halo, you begin a guerilla-war against the Covenant. Fight for humanity against an alien onslaught as you race to uncover the mysteries of Halo.",
+		"total_rating": 85.2432236134097,
+		"total_rating_count": 653
 	},
 	{
-		"id": 171309,
+		"id": 493,
 		"cover": {
-			"id": 258140,
-			"image_id": "co5j6k"
+			"id": 175606,
+			"image_id": "co3rhy"
 		},
-		"first_release_date": 1631836800,
+		"first_release_date": 1266451200,
 		"genres": [
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"name": "Neon Arena",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [32902, 37419, 40524, 76263, 96217, 105233, 106987, 111130, 113895, 119121],
-		"summary": "Neon Arena is a space arcade scoring arena game."
-	},
-	{
-		"id": 163697,
-		"cover": {
-			"id": 167220,
-			"image_id": "co3l10"
-		},
-		"first_release_date": 1612656000,
-		"genres": [
-			{
-				"id": 9,
-				"name": "Puzzle"
-			},
-			{
-				"id": 12,
-				"name": "Role-playing (RPG)"
-			},
 			{
 				"id": 31,
 				"name": "Adventure"
@@ -280,101 +154,419 @@
 		],
 		"involved_companies": [
 			{
-				"id": 145481,
+				"id": 106307,
 				"company": {
-					"id": 17023,
-					"name": "Wathitdew Record™"
+					"id": 261,
+					"name": "Quantic Dream"
 				},
 				"publisher": true
 			},
 			{
-				"id": 145482,
+				"id": 180642,
 				"company": {
-					"id": 36785,
-					"name": "Ilya Chkoliar"
+					"id": 13634,
+					"name": "Sony Computer Entertainment"
 				},
 				"publisher": true
 			}
 		],
-		"name": "Adventure Field 4",
+		"name": "Heavy Rain",
 		"platforms": [
 			{
 				"id": 6,
 				"name": "PC (Microsoft Windows)"
 			},
 			{
-				"id": 130,
-				"name": "Nintendo Switch"
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 48,
+				"name": "PlayStation 4"
 			}
 		],
-		"similar_games": [25646, 80916, 81249, 96217, 101608, 103303, 105049, 105269, 106987, 115280],
-		"summary": "Several years after Atoa defeated his evil self, Eras, and Marok took their place as leaders of the Sarook Kingdom. Atoa defeated the evil that was born from within him but a greater danger is now looming upon Sarook kingdom... The direct sequel to Adventure Field 3... Adventure Field 4 is a 20 hour, semi open-world, turn-based JRPG. Battle monsters, complete quests and save Sarook Kingdom! In this game you will have to fight your way through dungeons and powerful enemies to try gathering souls gems. Between the fighting and the exploration, you can cook and grow some vegetables, discover hidden mysteries hidden within the night and day system, try to find what people need to finish side quests and find many collectibles and secrets along the way! In Adventure Field 4, you can forget the old way of getting gold and items. You will need to find a variety of chests to open at your local chest opener! Having some difficulty with particular enemies in combat? Ask your royal team mate, Eserod! He will tell you about monsters strengths and weakness! You will need his help for sure... Dark hours are coming again to Sarook Kingdom... The Kingdom can feel the burning souls of the calamity... The Kingdom will fall again... But not if you can save it!..."
+		"similar_games": [109, 533, 960, 1020, 1342, 2031, 3188, 7599, 11270, 19441],
+		"storyline": "The game focuses on four different characters; Ethan Mars, a father and main protagonist; Scott Shelby, a private eye; Norman Jayden, an FBI agent and finally Madison Paige, a photojournalist. They are very different characters and do not know each other at the game's point, but are all connected in the sense that they all have interest in the game's main antagonist, the Origami Killer.",
+		"summary": "Heavy Rain is a cinematic psychological thriller from game developer Quantic Dream exclusively for the PlayStation 3. Dealing with a range of adult themes, the game revolves around a sophisticated plot and strong narrative threads that explore a complex moral proposition. You assume the role of multiple characters with very different backgrounds, motivations, and skills in a world where each player decision affects what will follow.",
+		"total_rating": 81.20593363667226,
+		"total_rating_count": 813
 	},
 	{
-		"id": 123238,
+		"id": 730,
 		"cover": {
-			"id": 94166,
-			"image_id": "co20nq"
+			"id": 120932,
+			"image_id": "co2lb8"
 		},
-		"first_release_date": 1585094400,
+		"first_release_date": 1003708800,
 		"genres": [
 			{
 				"id": 5,
 				"name": "Shooter"
 			},
 			{
-				"id": 31,
-				"name": "Adventure"
+				"id": 10,
+				"name": "Racing"
 			},
 			{
-				"id": 32,
-				"name": "Indie"
+				"id": 13,
+				"name": "Simulator"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
 			}
 		],
 		"involved_companies": [
 			{
-				"id": 94097,
+				"id": 7700,
 				"company": {
-					"id": 24653,
-					"name": "Panzar Studio"
+					"id": 536,
+					"name": "DMA Design"
 				},
 				"publisher": false
 			},
 			{
-				"id": 94098,
+				"id": 7701,
 				"company": {
-					"id": 24654,
-					"name": "OVALIS INVESTMENTS LIMITED"
+					"id": 29,
+					"name": "Rockstar Games"
 				},
 				"publisher": true
+			},
+			{
+				"id": 20012,
+				"company": {
+					"id": 139,
+					"name": "Take-Two Interactive"
+				},
+				"publisher": true
+			},
+			{
+				"id": 63952,
+				"company": {
+					"id": 307,
+					"name": "Rockstar Vienna"
+				},
+				"publisher": false
 			}
 		],
-		"name": "Total Lockdown",
+		"name": "Grand Theft Auto III",
 		"platforms": [
 			{
 				"id": 6,
 				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 8,
+				"name": "PlayStation 2"
+			},
+			{
+				"id": 11,
+				"name": "Xbox"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 34,
+				"name": "Android"
+			},
+			{
+				"id": 39,
+				"name": "iOS"
+			},
+			{
+				"id": 48,
+				"name": "PlayStation 4"
 			}
 		],
-		"similar_games": [25901, 32902, 76263, 96217, 105049, 105269, 106987, 111130, 113360, 113895],
-		"summary": "Total Lockdown is a battle royale on the top floors of a giant skyscraper. In this action shooter, the goal is to survive using any available weapons, gadgets, and tricks. Fight for fortune and fame in a battle to the death!",
-		"total_rating": 50.0,
-		"total_rating_count": 0
+		"similar_games": [39, 731, 732, 733, 819, 980, 1020, 1121, 3262, 19441],
+		"storyline": "You've been betrayed and left for dead. Now you're taking revenge, unless the city gets you first. Mob bosses need a favor, crooked cops need help and street gangs want you dead. You'll have to rob, steal and kill just to stay out of serious trouble. Anything can happen out here.",
+		"summary": "Featuring a fully 3-D living city, a combination of narrative driven and non-linear gameplay and a completely open environment, Grand Theft Auto III represents a huge leap forward in interactive entertainment. For the first time, players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city, in which anything can happen and probably will.\n\nWith a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, a huge array of street ready weapons and some of the seediest characters in video game history, Grand Theft Auto 3 is a sprawling epic which will show you that sometimes, crime can pay and sometimes it can pay you back. Available now for PlayStation2, Xbox, PC and Macintosh.",
+		"total_rating": 90.10582278041,
+		"total_rating_count": 1176
 	},
 	{
-		"id": 127806,
+		"id": 732,
 		"cover": {
-			"id": 174422,
-			"image_id": "co3ql2"
+			"id": 120933,
+			"image_id": "co2lb9"
 		},
-		"first_release_date": 1635292800,
+		"first_release_date": 1098748800,
 		"genres": [
 			{
-				"id": 32,
-				"name": "Indie"
+				"id": 5,
+				"name": "Shooter"
+			},
+			{
+				"id": 10,
+				"name": "Racing"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
 			}
 		],
-		"name": "Once More",
+		"involved_companies": [
+			{
+				"id": 55974,
+				"company": {
+					"id": 29,
+					"name": "Rockstar Games"
+				},
+				"publisher": true
+			},
+			{
+				"id": 55979,
+				"company": {
+					"id": 365,
+					"name": "Rockstar North"
+				},
+				"publisher": false
+			},
+			{
+				"id": 55980,
+				"company": {
+					"id": 139,
+					"name": "Take-Two Interactive"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Grand Theft Auto: San Andreas",
+		"platforms": [
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 8,
+				"name": "PlayStation 2"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 11,
+				"name": "Xbox"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 34,
+				"name": "Android"
+			},
+			{
+				"id": 39,
+				"name": "iOS"
+			},
+			{
+				"id": 48,
+				"name": "PlayStation 4"
+			}
+		],
+		"similar_games": [564, 730, 731, 733, 1020, 1121, 3262, 3263, 3270, 19441],
+		"storyline": "Five years ago, Carl Johnson escaped from the pressures of life in Los Santos, San Andreas, a city tearing itself apart with gang trouble, drugs and corruption. Where filmstars and millionaires do their best to avoid the dealers and gangbangers.\nNow, it’s the early 90’s. Carl’s got to go home. His mother has been murdered, his family has fallen apart and his childhood friends are all heading towards disaster.\n\nOn his return to the neighborhood, a couple of corrupt cops frame him for homicide. CJ is forced on a journey that takes him across the entire state of San Andreas, to save his family and to take control of the streets.",
+		"summary": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+		"total_rating": 91.9023273738442,
+		"total_rating_count": 2518
+	},
+	{
+		"id": 109,
+		"cover": {
+			"id": 121019,
+			"image_id": "co2ldn"
+		},
+		"first_release_date": 1305590400,
+		"genres": [
+			{
+				"id": 15,
+				"name": "Strategy"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 4483,
+				"company": {
+					"id": 30,
+					"name": "Team Bondi"
+				},
+				"publisher": false
+			},
+			{
+				"id": 19826,
+				"company": {
+					"id": 365,
+					"name": "Rockstar North"
+				},
+				"publisher": false
+			},
+			{
+				"id": 19827,
+				"company": {
+					"id": 29,
+					"name": "Rockstar Games"
+				},
+				"publisher": true
+			},
+			{
+				"id": 19828,
+				"company": {
+					"id": 308,
+					"name": "Rockstar Leeds"
+				},
+				"publisher": false
+			},
+			{
+				"id": 19829,
+				"company": {
+					"id": 139,
+					"name": "Take-Two Interactive"
+				},
+				"publisher": true
+			}
+		],
+		"name": "L.A. Noire",
+		"platforms": [
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			}
+		],
+		"similar_games": [40, 960, 1020, 1342, 1906, 2993, 3042, 3188, 11270, 19441],
+		"storyline": "Amid the post-war boom of Hollywood's Golden Age, Cole Phelps is an LAPD detective thrown headfirst into a city drowning in its own success. Corruption is rampant, the drug trade is exploding, and murder rates are at an all-time high. In his fight to climb the ranks and do what's right, Phelps must unravel the truth behind a string of arson attacks, racketeering conspiracies and brutal murders, battling the L.A. underworld and even members of his own department to uncover a secret that could shake the city to its rotten core.",
+		"summary": "L.A. Noire is a neo-noir detective action-adventure video game developed by Team Bondi and published by Rockstar Games. It was initially released for the PlayStation 3 and Xbox 360 platforms on 17 May 2011; a Microsoft Windows port was later released on 8 November 2011.\n\nL.A. Noire is set in Los Angeles in 1947 and challenges the player, controlling a Los Angeles Police Department (LAPD) officer, to solve a range of cases across five divisions. Players must investigate crime scenes for clues, follow up leads, and interrogate suspects, and the player's success at these activities will impact how much of each case's story is revealed.\n\nThe game draws heavily from both the plot and aesthetic elements of film noir—stylistic films made popular in the 1940s and 1950s that share similar visual styles and themes, including crime and moral ambiguity—along with drawing inspiration from real-life crimes for its in-game cases, based upon what was reported by the Los Angeles media in 1947.\n\nThe game uses a distinctive colour palette, but in homage to film noir it includes the option to play the game in black and white. Various plot elements reference the major themes of detective and mobster stories such as The Naked City, Chinatown, The Untouchables, The Black Dahlia, and L.A. Confidential.",
+		"total_rating": 86.11859590913184,
+		"total_rating_count": 814
+	},
+	{
+		"id": 426,
+		"cover": {
+			"id": 141698,
+			"image_id": "co31c2"
+		},
+		"first_release_date": 765244800,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 159793,
+				"company": {
+					"id": 26,
+					"name": "Square Enix"
+				},
+				"publisher": true
+			},
+			{
+				"id": 164524,
+				"company": {
+					"id": 334,
+					"name": "Sony Computer Entertainment Europe"
+				},
+				"publisher": true
+			},
+			{
+				"id": 165884,
+				"company": {
+					"id": 250,
+					"name": "Square"
+				},
+				"publisher": true
+			},
+			{
+				"id": 180322,
+				"company": {
+					"id": 321,
+					"name": "Tose"
+				},
+				"publisher": false
+			}
+		],
+		"name": "Final Fantasy VI",
+		"platforms": [
+			{
+				"id": 5,
+				"name": "Wii"
+			},
+			{
+				"id": 7,
+				"name": "PlayStation"
+			},
+			{
+				"id": 58,
+				"name": "Super Famicom"
+			}
+		],
+		"similar_games": [6, 384, 398, 421, 425, 427, 428, 832, 1804, 16474],
+		"storyline": "Final Fantasy VI focuses on a conflict between the Gestahlian Empire conquering the world and a rebel faction opposed to them known as the Returners, taking place in a fantasy steampunk-style world. The Empire has acquired great power by experimenting on captured espers, magical creatures of legend. The Returners seek magical power to fight the Empire on equal terms, and an amnesiac former imperial soldier, Terra Branford, proves key to both sides for understanding magic and espers.",
+		"summary": "Final Fantasy VI is the sixth main installment in the Final Fantasy series, developed and published by Square. It was the final title in the series to feature two-dimensional graphics, and the first story that did not revolve around crystals.\n\nThe game gives players up to fourteen playable characters, the largest cast in the series, and features the Active Time Battle pseudo-turn based menu command system. A party can consist of up to four characters, though some events require the player to assemble three different parties of up to four and switch between them.\n\nEach character has a unique command ability, such as Terra's Trance, Locke's Steal, Edgar's Tools or Sabin's Blitz, and can also learn Magic spells from earning AP from battles with magicite equipped. Each character's rare Desperation Attack will randomly activate after using the Attack command when at critical health.",
+		"total_rating": 94.80952161484126,
+		"total_rating_count": 573
+	},
+	{
+		"id": 80,
+		"cover": {
+			"id": 90429,
+			"image_id": "co1xrx"
+		},
+		"first_release_date": 1193356800,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 498,
+				"company": {
+					"id": 82,
+					"name": "Atari"
+				},
+				"publisher": true
+			},
+			{
+				"id": 14532,
+				"company": {
+					"id": 908,
+					"name": "CD Projekt RED"
+				},
+				"publisher": true
+			}
+		],
+		"name": "The Witcher",
 		"platforms": [
 			{
 				"id": 6,
@@ -385,356 +577,1281 @@
 				"name": "Mac"
 			}
 		],
-		"similar_games": [51591, 65827, 75948, 94741, 106992, 111043, 113895, 115850, 119788, 121309],
-		"summary": "Rewrite the past to create the future you deserve."
+		"similar_games": [6, 76, 472, 478, 660, 832, 1887, 1942, 3025, 9938],
+		"storyline": "The game begins when Geralt of Rivia, one of a few remaining \"witchers\" – traveling monster hunters for hire, gifted with unnatural powers, is transported to the witcher stronghold of Kaer Morhen by fellow witchers who had discovered him unconscious in a field. Geralt remembers almost nothing of his life before that point. He is taken to Kaer Morhen, the base of the witchers, where he meets a sorceress named Triss Merigold. The castle is attacked by a gang of bandits named Salamandra, led by a criminal known as the Professor, a mage named Savolla who controls a large, praying mantis-like monster, and another mage named Azar Javed. The witchers and the sorceress manage to slay the monster and kill Savolla, but the Professor and Azar manage to escape with the mutagens that genetically alter the witchers. After curing Triss of the wounds she received while fighting Javed, Geralt and the rest of the witchers head off in different directions in order to find information on Salamandra.",
+		"summary": "Based on the novel series by Andrzej Sapkowski, The Witcher follows Geralt of Rivia, an amnesiac witcher (problem solver and slayer of monsters) whose home, the Kaer Morhen citadel, is besieged by an organization called the Salamandra, who steal their valuable potions and get away. Throughout the game, Geralt must resolve people's moral dilemmas, connect the dots of his past and track down the Salamandra.",
+		"total_rating": 85.37087335326319,
+		"total_rating_count": 597
 	},
 	{
-		"id": 140918,
+		"id": 418,
 		"cover": {
-			"id": 119659,
-			"image_id": "co2kbv"
+			"id": 85213,
+			"image_id": "co1tr1"
 		},
-		"first_release_date": 1604102400,
-		"genres": [
-			{
-				"id": 5,
-				"name": "Shooter"
-			},
-			{
-				"id": 32,
-				"name": "Indie"
-			},
-			{
-				"id": 33,
-				"name": "Arcade"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 112920,
-				"company": {
-					"id": 29953,
-					"name": "MELONKOI"
-				},
-				"publisher": false
-			}
-		],
-		"name": "Sleep When I'm Dead",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [22799, 27266, 43367, 55282, 76263, 87514, 105049, 110737, 111130, 120201],
-		"summary": "Sleep When I'm Dead is a survival horror twin stick shooter with a distinctive art style."
-	},
-	{
-		"id": 177708,
-		"cover": {
-			"id": 187569,
-			"image_id": "co40q9"
-		},
-		"first_release_date": 1634428800,
-		"genres": [
-			{
-				"id": 25,
-				"name": "Hack and slash/Beat 'em up"
-			},
-			{
-				"id": 31,
-				"name": "Adventure"
-			},
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 154015,
-				"company": {
-					"id": 38692,
-					"name": "Maddison Baek"
-				},
-				"publisher": false
-			}
-		],
-		"name": "Magenta Horizon",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [28070, 29032, 54775, 81249, 94772, 96217, 103168, 106987, 111130, 113360],
-		"storyline": "Play as Gretel, a reaper in this purgatory-like afterlife. After being exiled from her sanctuary for 200 years, she is freed from her sarcophagus by a wandering soul named Archibald. Seeking purpose in this afterlife she decides to guide Archibald back to the sanctuary she was long exiled from. The journey won't be easy however as the path is fraught with all manner of grotesque demons starving for souls.",
-		"summary": "Magenta Horizon is a fast-paced hack-and-slash 2D platformer where you play as Gretel, a reaper in this purgatory-like afterlife."
-	},
-	{
-		"id": 141918,
-		"cover": {
-			"id": 123198,
-			"image_id": "co2n26"
-		},
-		"first_release_date": 1605571200,
-		"genres": [
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 115318,
-				"company": {
-					"id": 30673,
-					"name": "IAN MARTIN"
-				},
-				"publisher": false
-			}
-		],
-		"name": "Clint is Not an Incel: A Word on Fatness and Masculinity",
-		"platforms": [
-			{
-				"id": 82,
-				"name": "Web browser"
-			}
-		],
-		"similar_games": [38967, 65827, 106992, 111130, 113895, 114286, 141627, 143343, 143629, 185786],
-		"summary": "A Bitsy essay on the perception of fat men in games and culture."
-	},
-	{
-		"id": 219465,
-		"cover": {
-			"id": 252508,
-			"image_id": "co5eu4"
-		},
-		"first_release_date": 1698796800,
-		"genres": [
-			{
-				"id": 10,
-				"name": "Racing"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 189562,
-				"company": {
-					"id": 43723,
-					"name": "Unight"
-				},
-				"publisher": false
-			},
-			{
-				"id": 189575,
-				"company": {
-					"id": 43723,
-					"name": "Unight"
-				},
-				"publisher": true
-			}
-		],
-		"name": "Maximum Velocity",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [37419, 44178, 80382, 82090, 105011, 109292, 115653, 115785, 119161, 185150],
-		"summary": "Maximum Velocity is a high-stakes, high-speed racing game looking to shake up the racing genre forever. Join your friends and take on challenges in an immersive, ever-changing world. Drift, drag, or sprint your way around Industrial City and discover hidden secrets to the lore and ever-evolving story.\nDrive the way you want to.\n\nUpgrade your vehicles to handle the way you want them to. Make them as fast as you want or as drifty as you wish. You are in control of your car and how it handles. Unlock performance parts by exploring the city and doing challenges to get rewards and upgrades."
-	},
-	{
-		"id": 140670,
-		"cover": {
-			"id": 124679,
-			"image_id": "co2o7b"
-		},
-		"first_release_date": 1604016000,
-		"involved_companies": [
-			{
-				"id": 116856,
-				"company": {
-					"id": 4895,
-					"name": "Supermassive Games"
-				},
-				"publisher": false
-			}
-		],
-		"name": "The Dark Pictures Anthology: Volume 1 - Limited Edition",
-		"platforms": [
-			{
-				"id": 48,
-				"name": "PlayStation 4"
-			}
-		],
-		"similar_games": [55282, 99307, 111130, 214969, 215569, 219368, 220571, 221301, 224167, 228751],
-		"storyline": "- The Dark Pictures - Little Hope\nAbandoned and all alone, 4 college students and their teacher become stranded in an isolated town mile from anywhere after their bus crashes in bad weather. Trapped by a mysterious fog in the town of Little Hope, they search desperately for a means of escape whilst visions from the past haunt them from the shadows.\n\n- The Dark Pictures - Man of Medan\nYou are about to embark on a troublesome journey! - Five friends set sail on a holiday diving trip. As the day unfolds and a storm rolls in, their trip soon changes into something much more sinister and terrifying!",
-		"summary": "Box contents:\n- Xbox Game: The Dark Pictures - Little Hope\n- Xbox Game: The Dark Pictures - Man of Medan\n- Dark Pictures Cloth Map\n- Map Pins\n- Steelcase"
-	},
-	{
-		"id": 188925,
-		"cover": {
-			"id": 263924,
-			"image_id": "co5nn8"
-		},
-		"first_release_date": 1636675200,
-		"genres": [
-			{
-				"id": 31,
-				"name": "Adventure"
-			},
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"name": "TrapBot",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [25646, 29783, 68271, 80916, 96217, 105269, 106987, 111130, 113360, 113895],
-		"summary": "TrapBot is a dynamic 2D action hardcore platformer in an urban style"
-	},
-	{
-		"id": 121388,
-		"cover": {
-			"id": 98623,
-			"image_id": "co243j"
-		},
-		"first_release_date": 1588204800,
+		"first_release_date": 995500800,
 		"genres": [
 			{
 				"id": 12,
 				"name": "Role-playing (RPG)"
 			},
 			{
-				"id": 13,
-				"name": "Simulator"
-			},
-			{
-				"id": 31,
-				"name": "Adventure"
-			},
-			{
-				"id": 32,
-				"name": "Indie"
-			}
-		],
-		"involved_companies": [
-			{
-				"id": 83796,
-				"company": {
-					"id": 10413,
-					"name": "Minskworks"
-				},
-				"publisher": false
-			},
-			{
-				"id": 83797,
-				"company": {
-					"id": 20896,
-					"name": "The Yogscast"
-				},
-				"publisher": true
-			}
-		],
-		"name": "Landlord's Super",
-		"platforms": [
-			{
-				"id": 6,
-				"name": "PC (Microsoft Windows)"
-			}
-		],
-		"similar_games": [25311, 28277, 29348, 35994, 79134, 87975, 96217, 106987, 109339, 113402],
-		"summary": "Your quintessential construction simulator is here. Take a dodgy loan, restore a property, move in the locals, attend to their grievances, then celebrate with a pint in this fully-simulated, open-world 1980's Britain.",
-		"total_rating": 80.0,
-		"total_rating_count": 0
-	},
-	{
-		"id": 148152,
-		"cover": {
-			"id": 140734,
-			"image_id": "co30la"
-		},
-		"first_release_date": 1587945600,
-		"genres": [
-			{
-				"id": 13,
-				"name": "Simulator"
-			},
-			{
 				"id": 31,
 				"name": "Adventure"
 			}
 		],
 		"involved_companies": [
 			{
-				"id": 135490,
+				"id": 178030,
 				"company": {
-					"id": 110,
-					"name": "Focus Entertainment"
+					"id": 252,
+					"name": "Square Electronic Arts"
 				},
 				"publisher": true
 			},
 			{
-				"id": 135491,
+				"id": 178031,
 				"company": {
-					"id": 946,
-					"name": "Saber Interactive"
+					"id": 250,
+					"name": "Square"
 				},
-				"publisher": false
+				"publisher": true
 			}
 		],
-		"name": "SnowRunner: Scorched Vinyl Wrap",
+		"name": "Final Fantasy X",
+		"platforms": [
+			{
+				"id": 8,
+				"name": "PlayStation 2"
+			}
+		],
+		"similar_games": [359, 389, 1802, 2365, 10297, 11292, 14394, 22387, 36198, 55038],
+		"storyline": "The game is set in the world of Spira and follows the story of Tidus and Yuna. Tidus is a star athlete blitzball player, who is taken to Spira by Auron after a monster called Sin destroys his home city of Zanarkand. Tidus then joins the summoner, Yuna on her pilgrimage with her guardians to defeat Sin and bring about the Calm.",
+		"summary": "Final Fantasy X is the tenth main installment in the FF series and the first title released on sixth-generation consoles. It was also the first game to feature fully three-dimensional areas rather than including pre-rendered backdrops, and the first to include voice acting. Final Fantasy X tells the story of a star blitzball player, Tidus, who journeys with a young and beautiful summoner named Yuna on her quest to save the world of Spira from an endless cycle of destruction wrought by the colossal menace Sin.",
+		"total_rating": 91.2301080479964,
+		"total_rating_count": 690
+	},
+	{
+		"id": 421,
+		"cover": {
+			"id": 133032,
+			"image_id": "co2unc"
+		},
+		"first_release_date": 962928000,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 16,
+				"name": "Turn-based strategy (TBS)"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 174430,
+				"company": {
+					"id": 250,
+					"name": "Square"
+				},
+				"publisher": false
+			},
+			{
+				"id": 174431,
+				"company": {
+					"id": 252,
+					"name": "Square Electronic Arts"
+				},
+				"publisher": true
+			},
+			{
+				"id": 174432,
+				"company": {
+					"id": 26,
+					"name": "Square Enix"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Final Fantasy IX",
+		"platforms": [
+			{
+				"id": 7,
+				"name": "PlayStation"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 38,
+				"name": "PlayStation Portable"
+			},
+			{
+				"id": 46,
+				"name": "PlayStation Vita"
+			}
+		],
+		"similar_games": [384, 398, 413, 425, 426, 427, 428, 832, 1219, 1804],
+		"storyline": "Taking place on planet Gaia, the story follows a thief named Zidane Tribal, a member of a thief troupe who is tasked to kidnap the princess of Alexandria, Garnet Til Alexandros XVII. He teams up with her and a team of allies to stop Queen Brahne and her ally Kuja from waging a war with an army of black mages.",
+		"summary": "Final Fantasy IX is the ninth main installment in the FF series. The title is a return to the series's roots, with gameplay features and references to the past games featuring throughout, as well as a medieval fantasy setting and cartoonish art style as a break from the sci-fi slant style of Final Fantasy VII and Final Fantasy VIII.",
+		"total_rating": 86.00149442058046,
+		"total_rating_count": 640
+	},
+	{
+		"id": 113,
+		"cover": {
+			"id": 76391,
+			"image_id": "co1mxz"
+		},
+		"first_release_date": 1289865600,
+		"genres": [
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 3670,
+				"company": {
+					"id": 38,
+					"name": "Ubisoft Montreal"
+				},
+				"publisher": false
+			},
+			{
+				"id": 63944,
+				"company": {
+					"id": 39,
+					"name": "Ubisoft Annecy"
+				},
+				"publisher": false
+			},
+			{
+				"id": 63946,
+				"company": {
+					"id": 697,
+					"name": "Ubisoft Bucharest"
+				},
+				"publisher": false
+			},
+			{
+				"id": 63947,
+				"company": {
+					"id": 822,
+					"name": "Ubisoft Singapore"
+				},
+				"publisher": false
+			},
+			{
+				"id": 194930,
+				"company": {
+					"id": 15790,
+					"name": "Ubisoft Québec"
+				},
+				"publisher": false
+			},
+			{
+				"id": 202081,
+				"company": {
+					"id": 104,
+					"name": "Ubisoft Entertainment"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Assassin's Creed Brotherhood",
 		"platforms": [
 			{
 				"id": 6,
 				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
 			}
 		],
-		"similar_games": [25311, 28129, 28277, 79134, 87975, 101573, 103232, 105264, 109339, 114520],
-		"summary": "Explore SnowRunner in style with the unique Scorched Vinyl Wrap for the Chevrolet CK 1500.\n\nThe Scorched Vinyl Wrap adds a fiery burst look to the Chevrolet CK 1500."
+		"similar_games": [127, 128, 529, 537, 1006, 1266, 1970, 3025, 5606, 19441],
+		"summary": "Live and breathe as Ezio, a legendary Master Assassin, in his enduring struggle against the powerful Templar Order. He must journey into Italy’s greatest city, Rome, center of power, greed and corruption to strike at the heart of the enemy.\nDefeating the corrupt tyrants entrenched there will require not only strength, but leadership, as Ezio commands an entire Brotherhood who will rally to his side. Only by working together can the Assassins defeat their mortal enemies.\nAnd for the first time, introducing a never-before-seen multiplayer layer that allows you to choose from a wide range of unique characters, each with their own signature weapons and assassination techniques, and match your skills against other players from around the world.\nIt’s time to join the Brotherhood.",
+		"total_rating": 83.21723743293245,
+		"total_rating_count": 1313
 	},
 	{
-		"id": 148997,
+		"id": 122,
 		"cover": {
-			"id": 169779,
-			"image_id": "co3n03"
+			"id": 81346,
+			"image_id": "co1qrm"
 		},
-		"first_release_date": 1658707200,
+		"first_release_date": 1226880000,
 		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 3702,
+				"company": {
+					"id": 56,
+					"name": "Valve"
+				},
+				"publisher": true
+			},
+			{
+				"id": 3703,
+				"company": {
+					"id": 57,
+					"name": "Certain Affinity"
+				},
+				"publisher": false
+			},
+			{
+				"id": 3704,
+				"company": {
+					"id": 56,
+					"name": "Valve"
+				},
+				"publisher": false
+			},
+			{
+				"id": 3705,
+				"company": {
+					"id": 55,
+					"name": "Turtle Rock Studios"
+				},
+				"publisher": false
+			}
+		],
+		"name": "Left 4 Dead",
+		"platforms": [
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			}
+		],
+		"similar_games": [241, 495, 533, 564, 571, 623, 960, 2031, 2033, 19441],
+		"summary": "From Valve (the creators of Counter-Strike, Half-Life and more) comes Left 4 Dead, a co-op action horror game for the PC and Xbox 360 that casts up to four players in an epic struggle for survival against swarming zombie hordes and terrifying mutant monsters.\n\nSet in the immediate aftermath of the zombie apocalypse, L4D's survival co-op mode lets you blast a path through the infected in four unique “movies,” guiding your survivors across the rooftops of an abandoned metropolis, through rural ghost towns and pitch-black forests in your quest to escape a devastated Ground Zero crawling with infected enemies. Each \"movie\" is comprised of five large maps, and can be played by one to four human players, with an emphasis on team-based strategy and objectives.\n\nNew technology dubbed \"the AI Director\" is used to generate a unique gameplay experience every time you play. The Director tailors the frequency and ferocity of the zombie attacks to your performance, putting you in the middle of a fast-paced, but not overwhelming, Hollywood horror movie.\n\nAddictive single player, co-op, and multiplayer action gameplay from the makers of Counter-Strike and Half-Life Versus Mode lets you compete four-on-four with friends, playing as a human trying to get rescued, or as a zombie boss monster that will stop at nothing to destroy them.",
+		"total_rating": 82.6144028584082,
+		"total_rating_count": 539
+	},
+	{
+		"id": 1802,
+		"cover": {
+			"id": 173156,
+			"image_id": "co3plw"
+		},
+		"first_release_date": 794880000,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 201558,
+				"company": {
+					"id": 321,
+					"name": "Tose"
+				},
+				"publisher": false
+			},
+			{
+				"id": 202694,
+				"company": {
+					"id": 250,
+					"name": "Square"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Chrono Trigger",
+		"platforms": [
+			{
+				"id": 5,
+				"name": "Wii"
+			},
+			{
+				"id": 7,
+				"name": "PlayStation"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 19,
+				"name": "Super Nintendo Entertainment System"
+			},
+			{
+				"id": 20,
+				"name": "Nintendo DS"
+			},
+			{
+				"id": 58,
+				"name": "Super Famicom"
+			},
+			{
+				"id": 306,
+				"name": "Satellaview"
+			}
+		],
+		"similar_games": [1070, 1877, 5550, 5867, 22387, 26845, 55038, 96217, 106987, 115653],
+		"summary": "In this turn-based Japanese RPG, young Crono must travel through time through a misfunctioning teleporter to rescue his misfortunate companion and take part in an intricate web of past and present perils. The adventure that ensues soon unveils an evil force set to destroy the world, triggering Crono's race against time to change the course of history and bring about a brighter future.",
+		"total_rating": 92.3745833398657,
+		"total_rating_count": 925
+	},
+	{
+		"id": 375,
+		"cover": {
+			"id": 240787,
+			"image_id": "co55sj"
+		},
+		"first_release_date": 904780800,
+		"genres": [
+			{
+				"id": 24,
+				"name": "Tactical"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 112682,
+				"company": {
+					"id": 312,
+					"name": "Konami Computer Entertainment Japan"
+				},
+				"publisher": false
+			},
+			{
+				"id": 188999,
+				"company": {
+					"id": 129,
+					"name": "Konami"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Metal Gear Solid",
+		"platforms": [
+			{
+				"id": 7,
+				"name": "PlayStation"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 38,
+				"name": "PlayStation Portable"
+			}
+		],
+		"similar_games": [41, 374, 377, 378, 379, 564, 1009, 1985, 2031, 19441],
+		"storyline": "Metal Gear Solid takes place in an alternate history in which the Cold War continued into the 1990s, ending at some point near the end of the 20th century. Coming out of retirement, special agent Solid Snake is called back into the line of duty to take on rogue members of Foxhound, a crack government anti-terrorist squad threatening to launch nuclear-weapons on the White House unless they receive their $1 billion ransom. With only 24 hours to sabotage Foxhound's threat, Snake must infiltrate enemy lines, rescue the two hostages and thwart the terrorists' plans. The demons of his past will challenge him and his will as a soldier shall be tested, as Snake fights to save the world from nuclear devastation.",
+		"summary": "Metal Gear Solid is a stealth game created by Hideo Kojima which follows the MSX2 video games Metal Gear and Metal Gear 2: Solid Snake. Despite a transition to 3D, Metal Gear Solid's gameplay remains similar to his predecessors. The game utilizes a traditional top-down view and the player must navigate the protagonist Solid Snake through the game's areas without being detected. Detection will set off an alarm which draws armed enemies to his location. Conversations with Snake's allies and cutscenes are used extensively to advance the plot and gain more insight into it. Metal Gear Solid is regarded as one of the greatest and most important video games of all time, and helped popularize the stealth genre and in-engine cinematic cutscenes.",
+		"total_rating": 85.4429483597532,
+		"total_rating_count": 1178
+	},
+	{
+		"id": 2853,
+		"cover": {
+			"id": 100638,
+			"image_id": "co25ni"
+		},
+		"first_release_date": 1217980800,
+		"genres": [
+			{
+				"id": 8,
+				"name": "Platform"
+			},
+			{
+				"id": 9,
+				"name": "Puzzle"
+			},
 			{
 				"id": 15,
 				"name": "Strategy"
 			},
 			{
+				"id": 31,
+				"name": "Adventure"
+			},
+			{
 				"id": 32,
 				"name": "Indie"
 			}
 		],
 		"involved_companies": [
 			{
-				"id": 180638,
+				"id": 59566,
 				"company": {
-					"id": 42412,
-					"name": "Han Zhiyu"
+					"id": 1335,
+					"name": "Number None Inc."
+				},
+				"publisher": true
+			},
+			{
+				"id": 59568,
+				"company": {
+					"id": 1051,
+					"name": "Hothead Games"
 				},
 				"publisher": false
+			},
+			{
+				"id": 59569,
+				"company": {
+					"id": 4132,
+					"name": "icculus.org"
+				},
+				"publisher": false
+			},
+			{
+				"id": 109399,
+				"company": {
+					"id": 1335,
+					"name": "Number None Inc."
+				},
+				"publisher": false
+			},
+			{
+				"id": 109400,
+				"company": {
+					"id": 53,
+					"name": "Microsoft Game Studios"
+				},
+				"publisher": true
 			}
 		],
-		"name": "Chaos Galaxy 2",
+		"name": "Braid",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			}
+		],
+		"similar_games": [1331, 1991, 7342, 7406, 11646, 16992, 24426, 26855, 55190, 56033],
+		"storyline": "Tim is a man searching for a princess who \"has been snatched by a horrible and evil monster.\"His relationship with this princess is vague at best, and the only clear part of this relationship is that Tim has made some sort of mistake which he hopes to reconcile or, if possible, erase. As one progresses through the six worlds in Braid, storyline text at the beginning of each world provides further insight into Tim's quest for the princess, and alludes to the overarching gameplay mechanic of each level. The themes evoked include forgiveness, desire, and frustration. The final level, in which everything but Tim moves in reverse, depicts the princess escaping from a knight, and working together with Tim to surpass obstacles and meet at her home. Tim is suddenly locked out of the house, and, as time progresses forward, reversing Tim's actions, the events show the princess running from Tim, setting traps that he is able to evade, until she is rescued by the knight. Tim is revealed to be the \"monster\" the princess is running from.\nFollowing completion of the game, the player finds additional texts that expand the story. The ending of the game is purposely ambiguous, and has been subject to multiple interpretations. One theory, based on the inclusion of a hidden event and the famous quotation stated by Kenneth Bainbridge after the detonation of the first atomic bomb—\"Now we are all sons of bitches\"—is that the princess represents the atomic bomb and Tim is a scientist involved in its development.[20] Some also refer to the name of the game as both reference to the hair braid of the princess Tim seeks as well as the intertwining of time, demonstrated by the various time mechanics explored in the game. Journalists have considered Braid's plot to be interwoven with the game itself, much as the book Dictionary of the Khazars and the films Memento and Eternal Sunshine of the Spotless Mind interweave the narrative into the work's construction. In this sense, some have considered the game to carry a simple credo, such as \"You must look back to go forwards\" as suggested by Eurogamer's Dan Whitehead. Others have likened Braid to punk rock, designed (as explicitly stated by Blow) specifically as a statement against the status quo of the industry; it is considered to deconstruct traditional gameplay concepts, such as jumping on enemies or rescuing a princess from a castle as borrowed from Super Mario Bros., and rebuild them in the game to force the player to rethink current game design. Blow has stated that there is more than one interpretation of the story; he \"would not be capable\" of explaining the whole story of the game in words, and said that the central idea is \"something big and subtle and resists being looked at directly.\"Blow considered Braid to be \"about the journey, not the destination\". He deliberately designed the plot not to be fully revealed to the player unless they completed the game, seeing it as a way to provide \"a longer-term challenge\".",
+		"summary": "Braid is a puzzle-platformer, drawn in a painterly style, where you can manipulate the flow of time in strange and unusual ways. From a house in the city, journey to a series of worlds and solve puzzles to rescue an abducted princess. In each world, you have a different power to affect the way time behaves, and it is time's strangeness that creates the puzzles. The time behaviors include: the ability to rewind, objects that are immune to being rewound, time that is tied to space, parallel realities, time dilation, and perhaps more.\n\nBraid treats your time and attention as precious; there is no filler in this game. Every puzzle shows you something new and interesting about the game world.",
+		"total_rating": 85.97648797584856,
+		"total_rating_count": 505
+	},
+	{
+		"id": 2155,
+		"cover": {
+			"id": 89684,
+			"image_id": "co1x78"
+		},
+		"first_release_date": 1316649600,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 4513,
+				"company": {
+					"id": 1012,
+					"name": "FromSoftware"
+				},
+				"publisher": false
+			},
+			{
+				"id": 4514,
+				"company": {
+					"id": 248,
+					"name": "Bandai Namco Entertainment"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Dark Souls",
 		"platforms": [
 			{
 				"id": 6,
 				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
 			}
 		],
-		"similar_games": [33603, 36962, 51577, 65827, 79134, 107992, 111043, 113402, 115539, 116674],
-		"summary": "A turn-based Galaxy totalwar game. Choose one of 12 factions, direct dozens of admirals, control hundreds of warships, mecha and monsters, set up various buildings, study technology, and lead fleets to carry out grand strategic actions on the map of the galaxy."
+		"similar_games": [359, 1081, 1593, 1864, 1887, 2368, 3025, 3968, 7334, 11133],
+		"summary": "An action RPG and spiritual sequel to Demon's Souls in which the player embodies the Chosen Undead, who is tasked with fulfilling an ancient prophecy by ringing the Bells of Awakening in the dark fantasy setting of Lordran, an open world with intricate areas full of beasts, former humans gone hollow, and magical abominations whom the player must overcome in challenging and unforgiving combat.",
+		"total_rating": 89.007111352298,
+		"total_rating_count": 1010
+	},
+	{
+		"id": 233,
+		"cover": {
+			"id": 77288,
+			"image_id": "co1nmw"
+		},
+		"first_release_date": 1100563200,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 18928,
+				"company": {
+					"id": 24,
+					"name": "Sierra Entertainment"
+				},
+				"publisher": true
+			},
+			{
+				"id": 18929,
+				"company": {
+					"id": 56,
+					"name": "Valve"
+				},
+				"publisher": true
+			},
+			{
+				"id": 88970,
+				"company": {
+					"id": 22994,
+					"name": "NVIDIA Lightspeed Studios"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Half-Life 2",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 11,
+				"name": "Xbox"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 34,
+				"name": "Android"
+			}
+		],
+		"similar_games": [231, 471, 571, 673, 1011, 7350, 15536, 37016, 103301, 113114],
+		"storyline": "Gordon Freeman is brought out of stasis by the G-Man, who inserts him into a train arriving at City 17. After arriving at the station and eluding Combine forces, Gordon joins Lambda resistance members including Barney Calhoun, a former Black Mesa security guard now working undercover as a Combine CP officer, and Alyx Vance, the daughter of one of Gordon's former colleagues, Dr. Eli Vance. After a failed attempt to teleport Gordon to Black Mesa East from Dr. Kleiner's makeshift laboratory, Gordon, re-equipped with the HEV suit and a crowbar, is forced to embark on foot through the city's old canal system. After obtaining an airboat, he battles his way to Black Mesa East, several miles from the city.\nGordon is reintroduced to Eli and meets Dr. Judith Mossman. Alyx introduces Gordon to her large pet robot D0g and gives him a \"Gravity Gun\", a weapon which allows Gordon to pick up and move any large object with ease. Black Mesa East soon comes under Combine attack and Eli and Mossman are captured to be taken to a Combine prison, Nova Prospekt. Gordon and Alyx are forced to take separate paths to Nova Prospekt; Gordon takes a detour through the town of Ravenholm, receiving help from its last survivor, Father Grigori. After making his way through the town and a mine, Gordon makes his way to a Resistance outpost. Gordon is provided with a Dune Buggy, which he uses to travel along a crumbling coastal road to Nova Prospekt. Along the way, Gordon encounters frequent Combine patrols, and helps one of the resistance leaders, Colonel Odessa Cubbage, to defend a Resistance base from a Combine gunship.\nAfter crossing an antlion-infested beach, Gordon enters Nova Prospekt, where he is reunited with Alyx. They manage to locate Eli, but also discover that Mossman is a Combine informant. Before they can stop her, she teleports herself and Eli back to City 17's Citadel. The Combine teleporter explodes as Gordon and Alyx use it to escape Nova Prospekt.\nUpon reaching Kleiner's lab, a shaken Dr. Kleiner reveals to Gordon and Alyx that they were caught in a \"slow teleport\", during which a week had passed. In their absence, the Resistance, who heard about what had happened at Nova Prospekt, has mobilized against the Combine, turning City 17 into a battleground. During the fighting, Alyx is captured by the Combine and taken to the Citadel, and Gordon fights through the city with the aid of D0g and Barney to reach it. Inside the Citadel, he is caught in a Combine confiscation chamber that destroys all of his weapons except for the Gravity Gun, the energy enhancing its capabilities and allowing Gordon to escape and dispatch platoons of Combine soldiers.\nEventually, Gordon is captured riding in a Combine transport pod and is taken to Dr. Breen's office, where he and Dr. Mossman are waiting with Eli and Alyx in captivity. Dr. Breen begins to explain his plans for further conquest of the humans by the Combine, contrary to what he had told Dr. Mossman. Angered, Mossman frees Gordon, Alyx, and Eli before Breen teleports them off-world. Dr. Breen tries to escape through a portal, but Gordon pursues him and destroys the portal reactor with the super-charged Gravity Gun. Breen appears to be annihilated in the resulting explosion. Just before Gordon and Alyx are presumably met with a similar fate, time is frozen. The G-Man reappears, praising Gordon for his actions in City 17 and the Citadel. Making vague mention of \"offers for [Gordon's] services\", the G-Man places him back into stasis.",
+		"summary": "1998. HALF-LIFE sends a shock through the game industry with its combination of pounding action and continuous, immersive storytelling.\n\nNOW. By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the player's presence affects everything around them, from the physical environment to the behaviors even the emotions of both friends and enemies.",
+		"total_rating": 90.9344900782776,
+		"total_rating_count": 2278
+	},
+	{
+		"id": 7344,
+		"cover": {
+			"id": 90865,
+			"image_id": "co1y41"
+		},
+		"first_release_date": 1426032000,
+		"genres": [
+			{
+				"id": 8,
+				"name": "Platform"
+			},
+			{
+				"id": 9,
+				"name": "Puzzle"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 22506,
+				"company": {
+					"id": 5052,
+					"name": "Moon Studios"
+				},
+				"publisher": false
+			},
+			{
+				"id": 23371,
+				"company": {
+					"id": 1010,
+					"name": "Microsoft Studios"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Ori and the Blind Forest",
+		"platforms": [
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 49,
+				"name": "Xbox One"
+			},
+			{
+				"id": 130,
+				"name": "Nintendo Switch"
+			}
+		],
+		"similar_games": [7350, 8968, 9174, 9278, 11646, 16992, 19150, 26855, 28070, 55190],
+		"storyline": "Ori, the protagonist of the game, falls from the Spirit Tree and is adopted by Naru, who raises Ori as her own. When a disastrous event occurs causing the forest to wither and Naru to die, Ori is left to explore the forest. Ori eventually encounters Sein, who begins to guide Ori on an adventure to restore the forest through the recovery of the light of three main elements supporting the balance of the forest: waters, winds and warmth.",
+		"summary": "The forest of Nibel is dying. After a powerful storm sets a series of devastating events in motion, an unlikely hero must journey to find his courage and confront a dark nemesis to save his home. Ori and the Blind Forest tells the tale of a young orphan destined for heroics, through a visually stunning action-platformer crafted by Moon Studios for Xbox One and PC. Featuring hand-painted artwork, meticulously animated character performance, and a fully orchestrated score, Ori and the Blind Forest explores a deeply emotional story about love and sacrifice, and the hope that exists in us all.",
+		"total_rating": 88.00795875909576,
+		"total_rating_count": 1020
+	},
+	{
+		"id": 71,
+		"cover": {
+			"id": 89689,
+			"image_id": "co1x7d"
+		},
+		"first_release_date": 1191974400,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			},
+			{
+				"id": 8,
+				"name": "Platform"
+			},
+			{
+				"id": 9,
+				"name": "Puzzle"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 99702,
+				"company": {
+					"id": 56,
+					"name": "Valve"
+				},
+				"publisher": true
+			},
+			{
+				"id": 171685,
+				"company": {
+					"id": 1,
+					"name": "Electronic Arts"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Portal",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 34,
+				"name": "Android"
+			}
+		],
+		"similar_games": [43, 72, 231, 571, 1006, 2031, 7351, 7386, 9727, 19441],
+		"storyline": "Portal's plot is revealed to the player via audio messages or \"announcements\" from GLaDOS and visual elements inside rooms found in later levels. According to The Final Hours of Portal 2, the year is established to be \"somewhere in 2010\"—twelve years after Aperture Science has been abandoned.\n\nThe game begins with Chell waking up from a stasis bed and hearing instructions and warnings from GLaDOS, an artificial intelligence, about upcoming tests. Chell enters into distinct chambers that introduce players to the game's mechanics, sequentially. GLaDOS's announcements serve as instructions to Chell and help the player progress through the game, but also develops the atmosphere and characterizes the AI as a person.[4] Chell is promised cake as her reward if she completes all test chambers.[19]\n\nChell proceeds through the empty Enrichment Center, with GLaDOS as her only interaction. As the player nears completion, GLaDOS's motives and behavior turn more sinister; although she is designed to appear encouraging, GLaDOS's actions and speech suggest insincerity and callous disregard for the safety and well-being of the test subjects. The test chambers become increasingly dangerous as Chell proceeds, tests including a live-fire course designed for military androids, as well as some chambers flooded with a hazardous liquid. In another chamber, GLaDOS notes the importance of the Weighted Companion Cube, a waist-high crate with a single large pink heart on each face, for helping Chell to complete the test. However, GLaDOS declares it must be euthanized in an \"emergency intelligence incinerator\" before Chell can continue.[17] Some later chambers include automated turrets with childlike voices (also voiced by McLain) that fire at Chell, only to sympathize with her after being destroyed or disabled.[20][21]\n\nAfter Chell completes the final test chamber, GLaDOS maneuvers Chell into an incinerator in an attempt to kill her. Chell escapes with the portal gun and makes her way through the maintenance areas within the Enrichment Center.[22] GLaDOS panics and insists that she was pretending to kill Chell as part of testing. GLaDOS then asks Chell to assume the \"party escort submission position\", lying face-first on the ground, so that a \"party associate\" can take her to her reward, but Chell continues her escape. In this section, GLaDOS communes with Chell as it becomes clear the AI had killed everyone else in the center.[11][12] Chell makes her way through the maintenance areas and empty office spaces behind the chambers, sometimes following graffiti messages which point in the right direction. These backstage areas, which are in an extremely dilapidated state, stand in stark contrast to the pristine test chambers. The graffiti includes statements such as \"the cake is a lie\", and pastiches of Emily Dickinson's poem \"The Chariot\", Henry Wadsworth Longfellow's \"The Reaper and the Flowers\", and Emily Brontë's \"No Coward Soul Is Mine\", referring to and mourning the death of the Companion Cube.[4]\n\nGLaDOS attempts to dissuade Chell with threats of physical harm and misleading statements as Chell makes her way deeper into the maintenance areas. Chell reaches a large chamber where GLaDOS's hardware hangs overhead. GLaDOS continues to threaten Chell, but during the exchange, a sphere falls off of GLaDOS and Chell drops it in an incinerator. GLaDOS reveals that Chell has just destroyed the morality core or her conscience, one of the multiple \"personality cores\" that Aperture Science employees installed after the AI flooded the enrichment center with neurotoxin gas. With it removed, she can access its emitters again. A six-minute countdown starts as Chell dislodges and incinerates more of GLaDOS' personality cores, while GLaDOS discourages her both verbally, with taunts and juvenile insults, and physically by firing rockets at her. After Chell destroys the last personality core, a malfunction tears the room apart and transports everything to the surface. Chell is then seen lying outside the facility's gates amid the remains of GLaDOS. Following the announcement of Portal 2, the ending was expanded in a later update. In this retroactive continuity, Chell is dragged away from the scene by an unseen entity speaking in a robotic voice, thanking her for assuming the \"party escort submission position\".[15][23]\n\nThe final scene, after a long and speedy zoom through the bowels of the facility, shows a Black Forest cake,[24] and the Weighted Companion Cube, surrounded by a mix of shelves containing dozens of apparently inactive personality cores. The cores begin to light up, before a robotic arm descends and extinguishes the candle on the cake, causing the room to blackout.[25] As the credits roll, GLaDOS delivers a concluding report: the song \"Still Alive\", which declares the experiment to be a huge success, as well as serving to indicate to the player that GLaDOS is still alive,[26] that her \"happy\" core was not disabled.",
+		"summary": "Waking up in a seemingly empty laboratory, the player is made to complete various physics-based puzzle challenges through numerous test chambers in order to test out the new Aperture Science Handheld Portal Device, without an explanation as to how, why or by whom.",
+		"total_rating": 83.422292882113,
+		"total_rating_count": 2555
+	},
+	{
+		"id": 539,
+		"cover": {
+			"id": 115681,
+			"image_id": "co2h9d"
+		},
+		"first_release_date": 1368489600,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 170138,
+				"company": {
+					"id": 423,
+					"name": "Deep Silver"
+				},
+				"publisher": true
+			},
+			{
+				"id": 170139,
+				"company": {
+					"id": 314,
+					"name": "4A Games"
+				},
+				"publisher": false
+			}
+		],
+		"name": "Metro: Last Light",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			}
+		],
+		"similar_games": [495, 533, 538, 571, 960, 1164, 2031, 3042, 3188, 5647],
+		"storyline": "The game picks up after the bad ending from Metro 2033, in which Artyom delivers a devastating attack on the mysterious supernatural race known as the Dark Ones. The station-cities of the Metro struggle for power using weapons found in D6. The player follows Artyom, the main protagonist from Metro 2033, as he searches for the mysterious \"Prisoner\", the supposed “key to survival – the last light in our darkest hour…”",
+		"summary": "Based on the Russian novel Metro 2033 by Dmitry Glukhovsky, Metro: Last Light is a post-apocalyptic horror first-person shooter that serves as a new chapter in the Metro saga and is the sequel to Metro 2033. Like its predecessor, the game is a primarily story-driven shooter with heavy stealth elements. Artyom may carry up to three weapons at a time, however bullets are scarce and valuable to the point that higher grade bullets are, in fact, the Metro's currency. When dealing with armed opponents, stealth is encouraged and it is wise to save ammunition for the many mutant creatures encountered in combat. In many situations the player can choose between straightforward shooting and stealth, also having the option for lethal or non-lethal enemy takedowns.",
+		"total_rating": 81.26922123887525,
+		"total_rating_count": 549
+	},
+	{
+		"id": 1011,
+		"cover": {
+			"id": 94379,
+			"image_id": "co20tn"
+		},
+		"first_release_date": 1347926400,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			},
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 3861,
+				"company": {
+					"id": 148,
+					"name": "Gearbox Software"
+				},
+				"publisher": false
+			},
+			{
+				"id": 18953,
+				"company": {
+					"id": 8,
+					"name": "2K Games"
+				},
+				"publisher": true
+			},
+			{
+				"id": 42019,
+				"company": {
+					"id": 2121,
+					"name": "Iron Galaxy Studios"
+				},
+				"publisher": false
+			},
+			{
+				"id": 42020,
+				"company": {
+					"id": 73,
+					"name": "Aspyr Media"
+				},
+				"publisher": true
+			},
+			{
+				"id": 95841,
+				"company": {
+					"id": 907,
+					"name": "Sony Computer Entertainment of America"
+				},
+				"publisher": true
+			}
+		],
+		"name": "Borderlands 2",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 34,
+				"name": "Android"
+			},
+			{
+				"id": 46,
+				"name": "PlayStation Vita"
+			},
+			{
+				"id": 48,
+				"name": "PlayStation 4"
+			},
+			{
+				"id": 49,
+				"name": "Xbox One"
+			},
+			{
+				"id": 130,
+				"name": "Nintendo Switch"
+			}
+		],
+		"similar_games": [73, 498, 1877, 1905, 6032, 15536, 18290, 19164, 25657, 55038],
+		"storyline": "Five years after the events of Borderlands, a valuable mineral called \"Eridium\" starts flourishing through Pandora's crust. Handsome Jack, the leader of the Hyperion Corporation, secures this new resource and uses it to rule over Pandora with an iron fist. Meanwhile, rumors of an even larger Vault hidden on Pandora spread across the galaxy, drawing a new group of Vault Hunters to the planet in search of it.",
+		"summary": "A new era of shoot and loot is about to begin. Play as one of four new vault hunters facing off against a massive new world of creatures, psychos and the evil mastermind, Handsome Jack. Make new friends, arm them with a bazillion weapons and fight alongside them in 4 player co-op on a relentless quest for revenge and redemption across the undiscovered and unpredictable living planet.",
+		"total_rating": 82.53692208876296,
+		"total_rating_count": 1443
+	},
+	{
+		"id": 986,
+		"cover": {
+			"id": 89683,
+			"image_id": "co1x77"
+		},
+		"first_release_date": 1099958400,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 14502,
+				"company": {
+					"id": 620,
+					"name": "Bungie"
+				},
+				"publisher": false
+			},
+			{
+				"id": 22517,
+				"company": {
+					"id": 53,
+					"name": "Microsoft Game Studios"
+				},
+				"publisher": true
+			},
+			{
+				"id": 46787,
+				"company": {
+					"id": 362,
+					"name": "Pi Studios"
+				},
+				"publisher": false
+			},
+			{
+				"id": 46788,
+				"company": {
+					"id": 53,
+					"name": "Microsoft Game Studios"
+				},
+				"publisher": false
+			}
+		],
+		"name": "Halo 2",
+		"platforms": [
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 11,
+				"name": "Xbox"
+			},
+			{
+				"id": 49,
+				"name": "Xbox One"
+			}
+		],
+		"similar_games": [356, 740, 987, 989, 990, 991, 6803, 25657, 60459, 103281],
+		"summary": "Halo 2 is the sequel to the highly successful and critically acclaimed Halo: Combat Evolved. In Halo 2, the saga continues as Master Chief—a genetically enhanced super-soldier—is the only thing standing between the relentless Covenant and the destruction of all humankind.",
+		"total_rating": 82.62448548129939,
+		"total_rating_count": 500
+	},
+	{
+		"id": 1164,
+		"cover": {
+			"id": 82074,
+			"image_id": "co1rbu"
+		},
+		"first_release_date": 1362355200,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			},
+			{
+				"id": 8,
+				"name": "Platform"
+			},
+			{
+				"id": 9,
+				"name": "Puzzle"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 111701,
+				"company": {
+					"id": 26,
+					"name": "Square Enix"
+				},
+				"publisher": true
+			},
+			{
+				"id": 111702,
+				"company": {
+					"id": 552,
+					"name": "Crystal Dynamics"
+				},
+				"publisher": false
+			},
+			{
+				"id": 111703,
+				"company": {
+					"id": 23,
+					"name": "Feral Interactive"
+				},
+				"publisher": true
+			},
+			{
+				"id": 111704,
+				"company": {
+					"id": 291,
+					"name": "Nixxes Software"
+				},
+				"publisher": false
+			}
+		],
+		"name": "Tomb Raider",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			}
+		],
+		"similar_games": [533, 538, 912, 1020, 1334, 1377, 2031, 3188, 9727, 11270],
+		"storyline": "he game begins with Lara setting out on her first expedition aboard the ship Endurance, with the intention of finding the lost kingdom of Yamatai. By her suggestion and against Whitman's advice, the expedition ventures into the Dragon's Triangle, east of Japan. The ship is struck by a violent storm and shipwrecked, leaving the survivors stranded on an isolated island. Lara is separated from the others and captured by a strange, savage man. She manages to escape while her captor is killed as the cave collapses due to her actions. As Lara tries to locate the other survivors, she finds more evidence that the island is inhabited, such as strange carvings, dead bodies, and animal sacrifices. She eventually finds her friend Sam and a man called Mathias, who claims to be a teacher who was shipwrecked on the island. As Sam tells Mathias the legends of Himiko, Lara passes out; when she wakes, Mathias and Sam are nowhere in sight. When Lara regroups with the other survivors, Whitman decides to go with Lara and search for the still-missing Roth, while the rest of the group (Reyes, Jonah, Alex and Grim) set out to find Sam and Mathias. As Lara and Whitman explore, they discover that the island's inhabitants are worshipping Himiko, confirming that the island is Yamatai. Upon discovering a shrine erected in Himiko's name, they are captured by the islanders and taken to a settlement along with several other survivors from the Endurance. When the survivors attempt an escape, the captors turn on them. Lara is separated from Whitman and tries to hide, but is found by one of the islanders and forced to kill him. She fights off the remainder of the attackers and reunites with Roth, saving him from a wolf attack.\n\nLara manages to activate a radio tower and call for help, but the plane that answers the call is struck by a freak storm, and Lara hears a mysterious voice saying \"No one leaves\" in Japanese. Unable to save the surviving pilots, Lara is contacted by Alex and Reyes, who reveal that Sam has been kidnapped by the islanders, a violent cult known as the Solarii Brotherhood. Lara tries to rescue her, but is stopped by Mathias, leader of the Solarii, and ordered killed: she is saved by an attack from samurai-like Oni. Escaping the ancient monastery where she is taken by the Oni, she hears from Sam that Mathias is going to put her through the \"Ascension\", a \"fire ritual\" to find the next Sun Queen that will burn her to death if it is unsuccessful. Lara follows them to the Solarii fortress and is aided by Grim. The Solarii take Grim hostage, but he sacrifices himself so Lara can escape. With Roth's aid, Lara infiltrates the fortress and sees the ritual begin. When the fires are lit, a great wind blows them out, showing Sam to be the next Sun Queen. Lara escapes again and reunites with her friends, forming a plan to rescue Sam and escape. Aided by Whitman—who has managed to negotiate some degree of freedom with the Solarii—Lara returns to the palace to rescue Sam as Roth commandeers a helicopter to get them out. Lara succeeds, but persuades Sam to escape by land when she sees another storm gathering as the helicopter approaches. As Lara tries to force the helicopter pilot to land, they are brought down, with Lara nearly dying. Roth revives Lara, then takes a fatal blow from Mathias meant for Lara. While mourning Roth, Lara accepts that the storms are not natural, but are somehow connected to the Sun Queen and designed to prevent anyone from leaving the island. She meets up with the other survivors, who have evaded the Solarii long enough to secure a boat for escaping the island, provided that it can be repaired. They are joined by Whitman, who claims to have escaped, though Lara begins to suspect him of working with the cultists. Lara and Alex find parts for the boat in the wreck of the Endurance. They come under attack by the Solarii and Alex triggers an explosion, sacrificing himself so that Lara can escape with the tools.\n\nFinding an account of a World War II-era Japanese military and Nazi scientific expedition to the island that sought a way to harness the storms as a weapon, Lara decides to explore a coastal tomb, where she finds the remains of a samurai general who committed seppuku. It is revealed in a message he left that he led the Queen's Stormguard, the Oni that defend the monastery, and that the Queen's successor took her own life rather than receive the Sun Queen's power. Lara realizes that the Ascension is not a ceremony to crown a new queen, but rather a ritual that transfers the original Sun Queen's soul into a new body; the Sun Queen had learned to become effectively immortal by transferring her soul into a young girl's body each time she grew old. The last priestess' suicide had interrupted the ritual, and left the Queen's soul trapped in her old decaying body, and Himiko's spirit has wanted to escape that corpse ever since. As a descendant of Yamatai, Sam is a viable candidate, and Mathias plans to offer Sam as a new host in exchange for his freedom. Lara returns to the survivors on the beach to find that Whitman has betrayed them, abducting Sam and handing her over to Mathias. Lara, Jonah and Reyes give chase, heading up a river to the monastery, with Lara arriving just in time to see Mathias trick Whitman into approaching and speaking to the Oni: the Oni kill Whitman. After fighting her way through both the Solarii and the Stormguard, Lara arrives at the top of the monastery where Mathias is performing the Ascension ritual. Lara fights her way to the central platform, and after a struggle, knocks Mathias off the platform to his death. Symbolically, she does so using both her pistol and his in a dual-wield style that will later become one of her signatures. Despite Mathias' death, the ritual is already underway, with Himiko's soul starting to pour into Sam, but Lara then destroys Himiko's ancient remains, saving Sam and dispersing the storms. Lara, Sam, Reyes and Jonah then leave the island and are picked up by a cargo ship: as they sail home, Lara realizes that the mythical stories her father told her were more than stories, deciding not to return home just yet, and the screen fades to white with a proclamation of \"A Survivor is Born.\"",
+		"summary": "Tomb Raider explores the intense and gritty origin story of Lara Croft and her ascent from a young woman to a hardened survivor. Armed only with raw instincts and the ability to push beyond the limits of human endurance, Lara must fight to unravel the dark history of a forgotten island to escape its relentless hold.",
+		"total_rating": 83.36304174854794,
+		"total_rating_count": 1809
+	},
+	{
+		"id": 538,
+		"cover": {
+			"id": 123158,
+			"image_id": "co2n12"
+		},
+		"first_release_date": 1361836800,
+		"genres": [
+			{
+				"id": 5,
+				"name": "Shooter"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 185007,
+				"company": {
+					"id": 21,
+					"name": "Irrational Games"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185008,
+				"company": {
+					"id": 2492,
+					"name": "2K Australia"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185009,
+				"company": {
+					"id": 413,
+					"name": "Human Head Studios"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185010,
+				"company": {
+					"id": 3023,
+					"name": "Virtual Programming"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185011,
+				"company": {
+					"id": 73,
+					"name": "Aspyr Media"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185015,
+				"company": {
+					"id": 8,
+					"name": "2K Games"
+				},
+				"publisher": true
+			},
+			{
+				"id": 185016,
+				"company": {
+					"id": 21,
+					"name": "Irrational Games"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185017,
+				"company": {
+					"id": 2492,
+					"name": "2K Australia"
+				},
+				"publisher": false
+			},
+			{
+				"id": 185018,
+				"company": {
+					"id": 413,
+					"name": "Human Head Studios"
+				},
+				"publisher": false
+			}
+		],
+		"name": "BioShock Infinite",
+		"platforms": [
+			{
+				"id": 3,
+				"name": "Linux"
+			},
+			{
+				"id": 6,
+				"name": "PC (Microsoft Windows)"
+			},
+			{
+				"id": 9,
+				"name": "PlayStation 3"
+			},
+			{
+				"id": 12,
+				"name": "Xbox 360"
+			},
+			{
+				"id": 14,
+				"name": "Mac"
+			},
+			{
+				"id": 48,
+				"name": "PlayStation 4"
+			},
+			{
+				"id": 49,
+				"name": "Xbox One"
+			},
+			{
+				"id": 130,
+				"name": "Nintendo Switch"
+			}
+		],
+		"similar_games": [20, 21, 533, 1020, 1164, 1377, 2031, 3188, 9498, 11270],
+		"storyline": "BioShock Infinite takes place in the airborne city of Columbia in 1912, where the player assumes the role of Booker DeWitt, a disgraced ex-Pinkerton agent. Booker has been given the job of finding a mysterious and powerful woman imprisoned in Columbia since birth named Elizabeth in order to wipe his debts away, and the story follows the unlikely duo as they journey to escape the flying city while discovering its twisted secrets.",
+		"summary": "BioShock Infinite is the third game in the BioShock series. It is not a direct sequel/prequel to any of the previous BioShock games but takes place in an entirely different setting, although it shares similar features, gameplay and concepts with the previous games. BioShock Infinite features a range of environments that force the player to adapt, with different weapons and strategies for each situation. Interior spaces feature close combat with enemies, but unlike previous games set in Rapture, the setting of Infinite contains open spaces with emphasis on sniping and ranged combat against as many as fifteen enemies at once.",
+		"total_rating": 89.59117630576695,
+		"total_rating_count": 2052
+	},
+	{
+		"id": 1036,
+		"cover": {
+			"id": 169555,
+			"image_id": "co3mtv"
+		},
+		"first_release_date": 1163894400,
+		"genres": [
+			{
+				"id": 12,
+				"name": "Role-playing (RPG)"
+			},
+			{
+				"id": 31,
+				"name": "Adventure"
+			}
+		],
+		"involved_companies": [
+			{
+				"id": 167545,
+				"company": {
+					"id": 70,
+					"name": "Nintendo"
+				},
+				"publisher": true
+			},
+			{
+				"id": 167546,
+				"company": {
+					"id": 1366,
+					"name": "Nintendo EAD Software Development Group No.3"
+				},
+				"publisher": false
+			},
+			{
+				"id": 199426,
+				"company": {
+					"id": 27362,
+					"name": "Imagica DigitalScape"
+				},
+				"publisher": false
+			}
+		],
+		"name": "The Legend of Zelda: Twilight Princess",
+		"platforms": [
+			{
+				"id": 21,
+				"name": "Nintendo GameCube"
+			}
+		],
+		"similar_games": [121, 472, 533, 832, 1026, 1029, 1032, 1035, 1037, 7346],
+		"storyline": "Link, a young farm boy whose tasks consist of herding goats to watching children in Ordon village, is asked by the mayor to run an errand in Castle Town. But things went strange that day: the land becomes dark and strange creatures appear from another world called the Twilight Realm which turns most people into ghosts. Unlike the others, Link transforms into a wolf but is captured. A mysterious figure named Midna helps him break free, and with the aid of her magic, they set off to free the land from the shadows. Link must explore the vast land of Hyrule and uncover the mystery behind its plunge into darkness.",
+		"summary": "The Legend of Zelda: Twilight Princess is the last Zelda game for GameCube, it was highly anticipated by many members of the gaming community and was regarded as finally fulfilling the dreams of those who wanted a much more realistic and mature game than the ones before. The art is similar to the naturalistic style of Ocarina of Time, rather than the cel-shaded look of The Wind Waker. The main adventure takes place in several provinces with dungeons and temples. New to this game is the ability for Link to transform into a Wolf when entering the Twilight. As a wolf, Link can use his senses to solve puzzles and get past obstacles, he can also dig holes to find hearts and rupees. Twilight Princess has received universal acclaim from reviewers and journalists, who cited it as the greatest Zelda game of all time.",
+		"total_rating": 90.8702441031248,
+		"total_rating_count": 568
 	}
 ]
