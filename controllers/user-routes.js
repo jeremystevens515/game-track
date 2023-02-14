@@ -45,11 +45,11 @@ router.get("/reviews", async (req, res) => {
 	}
 });
 
-router.get("/wishlist/:id", async (req, res) => {
+router.get("/wishlist", async (req, res) => {
 	try {
 		const userWishlist = await Users.findOne({
 			where: {
-				id: req.params.id, //req.session.user_id,
+				id: req.session.user_id,
 			},
 			include: {
 				model: Games,
@@ -147,9 +147,7 @@ router.post("/wishlist", async (req, res) => {
 	// console.log("request received", req.body)
 	try{
 		const gameId = req.body.game_id;
-
-		// Replace "2" with req.session.user_id
-		const userId = 2
+		const userId = req.session.user_id;
 
 	const wish = { game_id: gameId, user_id: userId}
 
@@ -169,8 +167,7 @@ router.delete("/wishlist", async(req, res) => {
 		const gameData = await Wishlist.destroy({
 			where: {
 				game_id: req.body.id,
-				// Replace "2" with req.session.id
-				user_id: 2
+				user_id: req.session.user_id,
 			}
 		});
 		if(!gameData){
