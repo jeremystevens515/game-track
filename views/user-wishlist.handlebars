@@ -1,5 +1,5 @@
 <main>
-	<h2 class="text-lg px-6">Wishlist for {INSERT USER_ID HERE}</h2>
+	<h2 class="text-lg px-6">Wishlist for {{plainWishlist.username}}</h2>
 {{#each wishListGames as |game|}}
 	<div class="card lg:card-side shadow-xl"">
 		<img class="card-img-top" src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{game.cover.image_id}}.jpg"
