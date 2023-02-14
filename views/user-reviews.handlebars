@@ -1,5 +1,5 @@
 <main>
-	<h2 class="text-lg px-6">Reviews by User</h2>
+	<h2 class="text-lg px-6">Your Reviews</h2>
 	{{#each plainReviews as |review|}}
 		<div class="card card-side bg-base-100 shadow-xl m-5">
 			<figure><img
@@ -9,11 +9,13 @@
 			<div class="card-body">
 				<h2 class="card-title">Your review for {{review.game.name}} posted on {{review.created_at}}</h2>
 				<h3>Community Rating: {{review.game.total_rating}}/100 | Your Rating: {{review.rating}}/100</h3>
-				<p>{{review.review_text}}</p>
+				<p><textarea class="textarea textarea-primary">{{review.review_text}}</textarea></p>
 				<div class="card-actions justify-end">
-					<button class="btn btn-primary">Edit</button>
+					<button data-gameID="{{review.game.id}}" id="edit-btn" class="btn btn-primary">Edit</button>
 				</div>
 			</div>
 		</div>
 	{{/each}}
 </main>
+
+<script src="/js/reviews.js"></script>

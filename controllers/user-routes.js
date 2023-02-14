@@ -33,7 +33,7 @@ router.get("/reviews", async (req, res) => {
 			},
 			include: {
 				model: Games,
-				attributes: ["name", "cover", "total_rating"],
+				attributes: ["id", "name", "cover", "total_rating"],
 			},
 		});
 		const plainReviews = await userReviews.map((review) => {
@@ -152,7 +152,9 @@ router.post("/wishlist", async (req, res) => {
 		res.status(500).json(err);
 	}
 });
-
+// PUT requests--------------------------------------------------
+router.put("/reviews", async (req, res) => {});
+// DELETE requests--------------------------------------------------
 // Remove game from Wishlist
 router.delete("/wishlist", async (req, res) => {
 	console.log("request received", req.body);
