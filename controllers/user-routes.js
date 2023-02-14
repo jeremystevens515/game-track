@@ -80,15 +80,15 @@ router.get("/wishlist", async (req, res) => {
 // create account
 router.post("/signup", async (req, res) => {
 	try {
-		const { username, password }  = req.body;
-		const user = { username: username, password: password }
-		console.log(user)
+		const { username, password } = req.body;
+		const user = { username: username, password: password };
+		console.log(user);
 		await Users.create(user);
 		req.session.save(() => {
 			req.session.loggedIn = true;
 			console.log(req.session);
 		});
-		res.status(200).json({message: "great success!"})
+		res.status(200).json({ message: "great success!" });
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -152,8 +152,28 @@ router.post("/wishlist", async (req, res) => {
 		res.status(500).json(err);
 	}
 });
+
 // PUT requests--------------------------------------------------
-router.put("/reviews", async (req, res) => {});
+router.put("/reviews", async (req, res) => {
+	console.log("req.body", req.body);
+	console.log("session", req.session);
+	const { game_id, review_text } = req.body;
+	try {
+		const reviewData = await Reviews.update(
+			{ review_text: review_text },
+			{
+				where: {
+					user_id: req.session.user_id,
+					game_id: game_id,
+				},
+			}
+		);
+		res.status(200).json(reviewData);
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
+
 // DELETE requests--------------------------------------------------
 // Remove game from Wishlist
 router.delete("/wishlist", async (req, res) => {

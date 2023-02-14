@@ -6,6 +6,12 @@
 		"review_text": "This game is great."
 	},
 	{
+		"game_id": 19560,
+		"user_id": 1,
+		"rating": 100,
+		"review_text": "This game is also great."
+	},
+	{
 		"game_id": 19565,
 		"user_id": 2,
 		"rating": 100,
