@@ -1,5 +1,5 @@
 <main>
-	<h2 class="text-lg px-6">Reviews by User</h2>
+	<h2 class="text-lg px-6">Your Reviews</h2>
 	{{#each plainReviews as |review|}}
 		<div class="card card-side bg-base-100 shadow-xl m-5">
 			<figure><img
@@ -9,10 +9,16 @@
 			<div class="card-body">
 				<h2 class="card-title">Your review for {{review.game.name}} posted on {{review.created_at}}</h2>
 				<h3>Community Rating: {{review.game.total_rating}}/100 | Your Rating: {{review.rating}}/100</h3>
-				<p>{{review.review_text}}</p>
-				<div class="card-actions justify-end">
-					<button class="btn btn-primary">Edit</button>
-				</div>
+				{{!display text that is not editable}}
+				<p id="text-display" class="my-3" data-visible="true">{{review.review_text}}</p>
+				{{!display text that is abled to be edited}}
+				<p id="text-editor" data-visible="false" style="display: none">
+					<textarea id="text-editor-textarea" class="textarea textarea-primary">{{review.review_text}}</textarea>
+				</p>
+				{{!change text content of button to submit when textarea is visible}}
+				<a href="/user/reviews/{{review.game.id}}" class="card-actions justify-end">
+					<button data-gameId="{{review.game.id}}" id="edit-btn" class="btn btn-primary">Edit</button>
+				</a>
 			</div>
 		</div>
 	{{/each}}

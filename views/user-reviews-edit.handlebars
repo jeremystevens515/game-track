@@ -1,0 +1,25 @@
+<main>
+	<h2 class="text-lg px-6">Your Reviews</h2>
+	<div class="card card-side bg-base-100 shadow-xl m-5">
+		<figure><img
+				src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{review.game.cover.image_id}}.jpg"
+				alt="{{review.game.name}}"
+			/></figure>
+		<div class="card-body">
+			<h2 class="card-title">Your review for {{review.game.name}} posted on {{review.created_at}}</h2>
+			<h3>Community Rating:
+				{{review.game.total_rating}}/100 | Your Rating:
+				<input id="rating" type="text" class="input input-bordered input-primary w-16" placeholder="{{review.rating}}"></input>/100</h3>
+
+			<p id="text-editor">
+				<textarea id="textarea-text" class="textarea textarea-primary w-full">{{review.review_text}}</textarea>
+			</p>
+
+			<div class="card-actions justify-end">
+				<button data-gameId="{{review.game.id}}" id="edit-btn" class="btn btn-primary">Submit</button>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="/js/reviews-edit.js"></script>

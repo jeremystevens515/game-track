@@ -19,13 +19,8 @@ router.get("/forgot-password", async (req, res) => {
 });
 
 // get reviews page if user logged in
-// get reviews based on user id
+// displays all reviews based on user id
 router.get("/reviews", async (req, res) => {
-	// if (!req.session.loggedIn) {
-	// 	res.redirect;
-	// }
-	console.log("user_id reviews:", req.session.user_id);
-	console.log("user logged in? ", req.session.loggedIn);
 	try {
 		const userReviews = await Reviews.findAll({
 			where: {
@@ -33,15 +28,38 @@ router.get("/reviews", async (req, res) => {
 			},
 			include: {
 				model: Games,
-				attributes: ["name", "cover", "total_rating"],
+				attributes: ["id", "name", "cover", "total_rating"],
 			},
 		});
 		const plainReviews = await userReviews.map((review) => {
 			return review.get({ plain: true });
 		});
-		console.log("userReviews object: ", plainReviews);
 		res.render("user-reviews", {
 			plainReviews,
+			loggedIn: req.session.loggedIn,
+		});
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
+
+// display one review based on user id and game id
+router.get("/reviews/:id", async (req, res) => {
+	// console.log(req.session.user_id);
+	try {
+		const userReview = await Reviews.findOne({
+			where: {
+				user_id: req.session.user_id,
+				game_id: req.params.id,
+			},
+			include: {
+				model: Games,
+				attributes: ["id", "name", "cover", "total_rating"],
+			},
+		});
+		const plainReview = await userReview.get({ plain: true });
+		res.render("user-reviews-edit", {
+			review: plainReview,
 			loggedIn: req.session.loggedIn,
 		});
 	} catch (err) {
@@ -61,13 +79,13 @@ router.get("/wishlist", async (req, res) => {
 				attributes: ["id", "name", "cover", "total_rating", "summary"],
 			},
 		});
-		console.log(userWishlist);
+		// console.log(userWishlist);
 
 		const plainWishlist = userWishlist.get({ plain: true });
-		console.log("wishlist object: ", plainWishlist);
+		// console.log("wishlist object: ", plainWishlist);
 
 		const wishListGames = plainWishlist.games;
-		console.log(wishListGames);
+		// console.log(wishListGames);
 
 		// res.status(200).json(userWishlist);
 		res.render("user-wishlist", { wishListGames });
@@ -80,15 +98,15 @@ router.get("/wishlist", async (req, res) => {
 // create account
 router.post("/signup", async (req, res) => {
 	try {
-		const { username, password }  = req.body;
-		const user = { username: username, password: password }
-		console.log(user)
+		const { username, password } = req.body;
+		const user = { username: username, password: password };
+		// console.log(user);
 		await Users.create(user);
 		req.session.save(() => {
 			req.session.loggedIn = true;
-			console.log(req.session);
+			// console.log(req.session);
 		});
-		res.status(200).json({message: "great success!"})
+		res.status(200).json({ message: "great success!" });
 	} catch (err) {
 		res.status(500).json(err);
 	}
@@ -110,7 +128,7 @@ router.post("/login", async (req, res) => {
 
 		const validatePassword = await userData.checkPassword(req.body.password);
 		if (validatePassword === false) {
-			console.log("Please enter a valid password");
+			// console.log("Please enter a valid password");
 			res.status(400).json({ message: "Incorrect password" });
 			return;
 		}
@@ -153,9 +171,25 @@ router.post("/wishlist", async (req, res) => {
 	}
 });
 
+// PUT requests--------------------------------------------------
+router.put("/reviews/:id", async (req, res) => {
+	try {
+		const reviewData = await Reviews.update(req.body, {
+			where: {
+				user_id: req.session.user_id,
+				game_id: req.params.id,
+			},
+		});
+		res.status(200).json(reviewData);
+	} catch (err) {
+		res.status(500).json(err);
+	}
+});
+
+// DELETE requests--------------------------------------------------
 // Remove game from Wishlist
 router.delete("/wishlist", async (req, res) => {
-	console.log("request received", req.body);
+	// console.log("request received", req.body);
 	try {
 		const gameData = await Wishlist.destroy({
 			where: {
@@ -167,7 +201,7 @@ router.delete("/wishlist", async (req, res) => {
 			res.status(404).json({ message: "This game wasn't on your wishlist" });
 			return;
 		}
-		console.log("\u001b[31mGame removed");
+		// console.log("\u001b[31mGame removed");
 		res.status(200).json(gameData);
 	} catch (err) {
 		res.status(500).json(err);
