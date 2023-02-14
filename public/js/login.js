@@ -1,11 +1,23 @@
 const userNameInputEl = document.getElementById("username");
 const passwordInputEl = document.getElementById("password");
+const continueBtn = document.getElementById("continue");
 
-getUserInfo = () => {
-	userName = userNameInputEl.value;
-	userPassword = passwordInputEl.value;
-	console.log(userName);
-	console.log(userPassword);
+const getUserInfo = (event) => {
+	event.preventDefault();
+	const data = {
+		username: userNameInputEl.value,
+		password: passwordInputEl.value,
+	};
+	console.log("data:", JSON.stringify(data));
+	fetch("/user/login", {
+		method: "POST",
+		body: JSON.stringify(data),
+		headers: { "Content-Type": "application/json" },
+	}).then((res) => {
+		if (res.ok) {
+			document.location.replace("/");
+		}
+	});
 };
 
-console.log("hello world");
+continueBtn.addEventListener("click", getUserInfo);
