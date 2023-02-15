@@ -29,7 +29,7 @@ router.get("/:id", async (req, res) => {
 			include: { model: Reviews },
 		});
 		// serialize gamesData
-		const gamesInfo = gamesData.get({ plain: true });
+		const gamesInfo = await gamesData.get({ plain: true });
 
 		let imageId;
 		if (gamesInfo.cover) {
@@ -37,17 +37,31 @@ router.get("/:id", async (req, res) => {
 		}
 
 		// for each game in similar games, return object
-		// let similarGames = [];
+		// similarGames will be an array of objects
+		let similarGames = [];
 		console.log(gamesInfo.similar_games);
-		gamesInfo.similar_games.forEach(async (gameId) => {
-			const title = await sequelize.query(
-				`SELECT id, cover->'$.image_id' AS cover, name FROM games WHERE id =${gameId}`
-			);
-			console.log("title:", title[0]);
-			// if (title !== null) {
-			// 	similarGames.push(title);
-			// }
-		});
+		for (let gameId of gamesInfo.similar_games) {
+			// const title = await sequelize.query(
+			// 	`SELECT id, cover->'$.image_id' AS cover, name FROM games WHERE id =${gameId}`
+			// );
+			const title = await Games.findByPk(gameId, {
+				attributes: ["id", "name", "cover"],
+			});
+
+			if (title !== null) {
+				const gameObject = {
+					id: title.id,
+					name: title.name,
+					cover: title.cover.image_id,
+				};
+
+				similarGames.push(gameObject);
+			}
+		}
+
+		console.log(gamesInfo);
+		console.log(similarGames);
+
 		res.render("gamepage", {
 			gamesInfo,
 			imageId,
@@ -60,5 +74,4 @@ router.get("/:id", async (req, res) => {
 		res.status(500).json({ message: "Error retriving the game info" });
 	}
 });
-
 module.exports = router;

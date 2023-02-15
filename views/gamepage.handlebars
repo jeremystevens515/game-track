@@ -3,7 +3,7 @@
     <figure>
       {{#if imageId}}
       <div class="ml-10">
-        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{imageId}}.jpg" alt="cover image"/>
+        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/{{imageId}}.jpg" alt="cover image"/>
       {{/if}}
       </div>
     </figure>
@@ -22,7 +22,7 @@
   <section>
     <div class="card shadow-lg">
       <div class="card-body">
-        <h1 class="card-title">Review by User {{user_id}}</h1>
+        <h1 class="card-title">Review by User {{user_id}} on {{created_at}}</h1>
         <p>{{review.rating}} out of 100</p>
         <p>{{review.review_text}}</p>
       </div>
@@ -45,12 +45,16 @@
   {{/if}}
 
   {{#if similarGames}}
-  <section class="flex">
+  <section class="mt-10">
+    <h1>Similar Games</h1>
     {{#each similarGames as |game|}}
-      <div class="card">
+     <div class="card card-compact w-56 bg-base-100 shadow-xl">
+        <figure><img src="https://images.igdb.com/igdb/image/upload/t_cover_small_2x/{{game.cover}}.jpg" alt="cover image"/></figure>
         <div class="card-body">
-           <img src="https://images.igdb.com/igdb/image/upload/t_cover_big/{{game.cover}}.jpg" alt="cover image"/>
-          <h1 class="card-title">{{game.name}}</h1>
+        <h2 class="card-title">{{game.name}}</h2>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">See It</button>
+          </div>
         </div>
       </div>
     {{/each}}
