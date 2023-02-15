@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { platform } = require("os");
 const { Users, Reviews, Wishlist, Games } = require("../models");
 
 // get request to / getting game data like name cover and genre of game
@@ -8,7 +9,7 @@ router.get("/", async (req, res) => {
 
 		gamesData.forEach((game) => {
 			const genresNames = game.genres.map((genre) => genre.name);
-			game.genres = JSON.stringify(genresNames);
+			game.genres = genresNames;
 			game.cover = game.cover.image_id;
 		});
 		res.render("homepage", {
@@ -30,6 +31,8 @@ router.get("/:id", async (req, res) => {
 		});
 		// serialize gamesData
 		const gamesInfo = await gamesData.get({ plain: true });
+
+		gamesInfo.platforms = gamesInfo.platforms.map((platform) => platform.name);
 
 		let imageId;
 		if (gamesInfo.cover) {

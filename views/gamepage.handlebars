@@ -3,16 +3,24 @@
     <figure>
       {{#if imageId}}
       <div class="ml-10">
-        <img src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/{{imageId}}.jpg" alt="cover image"/>
+        <img class="rounded-l-3xl" src="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/{{imageId}}.jpg" alt="cover image"/>
       {{/if}}
       </div>
     </figure>
-    <div class="card lg:card-side bg-base-100 shadow-xl text-center">
+    <div class="card card-side bg-base-100 shadow-xl">
       <div class="card-body">
-        <h2 class="card-title text-center text-3xl">{{gamesInfo.name}}</h2>
-        <p class="flex-wrap">{{gamesInfo.summary}}</p>
-        <p class="flex-wrap text-left">Critic Score-{{gamesInfo.total_rating}}%</p>
-        <p class="flex-wrap text-left">IGDB Game ID: <span id="game_id">{{gamesInfo.id}}</span></p>
+        <h2 class="card-title text-3xl">{{gamesInfo.name}}</h2>
+        <div class="flex-wrap text-left">IGDB Game ID: <span id="game_id">{{gamesInfo.id}}</span></div>
+        <div class="flex-wrap text-left">Critic Score-{{gamesInfo.total_rating}}%</div>
+        <div>
+          <h3 class="font-semibold">Summary</h3>
+          <div class="flex-wrap mt-4">{{gamesInfo.summary}}</div>
+        </div>
+        <div class="mt-4">
+          <h3 class="font-semibold">Platforms</h3>
+          <div class="flex-wrap mt-4">{{gamesInfo.platforms}}</div>
+        </div>
+
       </div>
     </div>
   </section>
