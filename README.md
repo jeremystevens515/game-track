@@ -1,39 +1,43 @@
-Game Track
+# Game Track
 
-Table of Contents:
+## Table of Contents:
 
-Description
-Installation
-Usage
-Contributing
-Tests
-Licenses
-Credits
-Questions
+[Description](#Description)<br>
+[Usage](#Usage)<br>
+[License](#License)<br>
+[Credits](#Credits)<br>
+[Questions](#Questions)<br>
 
-Description
-This project will help any die-hard gamer to search for games, create an account and longin.He can then leave reviews and make recommendationfor new game to play.
+## Description
 
-Installation
-by cloning it from the Github.
+This project will help any gamer search for games, leave reviews and get recommendations for new games to play.
 
-Usage
-in the web.
+## Usage
 
-Contributions
-no applicable
+This is a web application. Simply open your browser of choice and go to http://game-track.herokuapp.com.
 
-Testing
-There is no test for this application.
+## License
 
-Licenses
-License: MIT
-License: MIT https://opensource.org/licenses/MIT
+License: [MIT](https://opensource.org/licenses/MIT)
 
-Questions
-Have questions about this project?
-GitHub: https://github.com/bertintshisuaka2
-Email: bertintshisuaka@hotmail.com
+## Contributors
 
-Credits
-BERTIN(KABUNDI-TSHISUAKA)
+BERTIN(KABUNDI-TSHISUAKA)<br>
+GitHub: https://github.com/bertintshisuaka2<br>
+Email: bertintshisuaka@hotmail.com<br>
+
+ADRES ZATINA<br>
+GitHub: <br>
+Email: <br>
+
+ERIC NEFF<br>
+GitHub: <br>
+Email: <br>
+
+RODNEY MAJOR<br>
+GitHub: <br>
+Email: <br>
+
+JEREMY STEVENS<br>
+GitHub: https://github.com/jeremystevens515<br>
+Email: jeremytstevensdev@gmail.com<br>
